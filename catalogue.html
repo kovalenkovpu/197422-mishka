@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, user-scalable=no">
+    <title>HTML Academy: Мишка. Каталог</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+  <!-- обертка для всего содержимого, flex -->
+  <div class="page-wrapper">
+
+    <!-- блок основного хедера страницы -->
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a href="index.html"><img src="http://placehold.it/86x35" alt="Мишка"></a> <!-- временная замена лого -->
+      </div>
+      <!-- логотип бургер -->
+      <div class="menu-toggle">
+        <img src="http://placehold.it/20x14" alt="Меню"> <!-- временная замена лого -->
+      </div>
+    </header>
+
+    <!-- блок главного меню-бургер -->
+    <nav class="main-menu  main-menu--visible">
+      <ul>
+        <li class="menu-item"><a href="/catalogue.html" class="menu-item__title">Каталог товаров</a></li>
+        <li class="menu-item"><a href="/knitwork.html" class="menu-item__title">Вязание на заказ</a></li>
+        <li class="menu-item"><a href="/search.html" class="menu-item__title"><span class="menu-item__search"></span>Поиск по сайту</a></li>
+        <li class="menu-item"><a href="/cart.html" class="menu-item__title"><span class="menu-item__cart"></span>Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
+
+    <!-- блок Каталог товаров -->
+    <section class="page-name">
+      <h1 class="page-name__title">Каталог товаров</h1>
+    </section>
+
+    <!-- блок каталога с тремя элементами-->
+    <main class="catalogue">
+      <a href="#" class="catalogue-item">
+        <div class="catalogue-item__img">
+          <img src="http://placehold.it/260x195" alt="Зайчик">
+        </div>
+        <div class="catalogue-item__description">
+          <h4>Зайчик-попрыгайчик</h4>
+          <p>Рост 30см, вес 200г</p>
+        </div>
+        <div class="catalogue-item__price">1 200 руб.</div>
+      </a>
+      <a href="#" class="catalogue-item">
+        <div class="catalogue-item__img">
+          <img src="http://placehold.it/260x195" alt="Корзинка">
+        </div>
+        <div class="catalogue-item__description">
+          <h4>Корзинка для белья</h4>
+          <p>Диаметр 15 см, высота 10 см</p>
+        </div>
+        <div class="catalogue-item__price">690 руб.</div>
+      </a>
+      <a href="#" class="catalogue-item">
+        <div class="catalogue-item__img">
+          <img src="http://placehold.it/260x195" alt="Корзинка для игрушек">
+        </div>
+        <div class="catalogue-item__description">
+          <h4>Большая корзинка для игрушек</h4>
+          <p>Диаметр 30 см, высота 30 см</p>
+        </div>
+        <div class="catalogue-item__price">1 500 руб.</div>
+      </a>
+    </main>
+
+    <!-- блок процесса производства -->
+    <section class="production">
+      <span class="production__logo"><img src="http://placehold.it/32x22" alt="Производство"></span>
+      <h4 class="production__title">Процесс производства</h4>
+      <article class="production__video">
+        <video controls preload="metadata" poster="http://placehold.it/260x150" width="260" height="150">
+          <source src="/video.mp4" type="video/mp4">
+          <source src="/video.ogv" type="video/ogg">
+          <source src="/video.webm" type="video/webm">
+        </video>
+      </article>
+      <div class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+      <a href="#" class="production__btn  ghost-btn">Сделать заказ</a>
+    </section>
+
+    <!-- блок футера страницы -->
+    <footer class="page-footer">
+      <!-- блок с соц кнопками -->
+      <div class="social">
+        <span class="social__inst">IN</span>
+        <span class="social__fb">FB</span>
+        <span class="social__twitter">TW</span>
+      </div>
+      <!-- блок Разработано -->
+      <div class="developed">
+        <span class="developed__title">Разработано</span>
+        <span class="developed__logo"><img src="http://placehold.it/34x27" alt="html-academy"></span>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/main-menu.js"></script>
+  </body>
+</html>
