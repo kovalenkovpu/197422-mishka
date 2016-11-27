@@ -12,123 +12,108 @@
 
     <!-- блок основного хедера страницы -->
     <header class="page-header">
-      <div class="page-header__logo">
+      <a class="page-header__logo">
         <img src="http://placehold.it/86x35" alt="Мишка"> <!-- временная замена лого -->
-      </div>
-      <!-- логотип бургер -->
-      <div class="menu-toggle">
-        <img src="http://placehold.it/20x14" alt="Меню"> <!-- временная замена лого -->
-      </div>
+      </a>
+      <!-- блок главного меню-бургер -->
+      <nav class="main-menu  main-menu--visible">
+        <ul>
+          <!-- логотип бургер -->
+          <li class="menu-item">
+            <button class="menu-item__toggle"><img src="http://placehold.it/20x14" alt="Меню"></button>
+          </li>
+          <!-- элементы меню бургера -->
+          <li class="menu-item"><a href="/catalogue.html" class="menu-item__title">Каталог товаров</a></li>
+          <li class="menu-item"><a href="/knitwork.html" class="menu-item__title">Вязание на заказ</a></li>
+          <li class="menu-item"><a href="/search.html" class="menu-item__title"><span class="menu-item__search"></span>Поиск по сайту</a>  </li>
+          <li class="menu-item"><a href="/cart.html" class="menu-item__title"><span class="menu-item__cart"></span>Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- блок главного меню-бургер -->
-    <nav class="main-menu  main-menu--visible">
-      <ul>
-        <li class="menu-item"><a href="/catalogue.html" class="menu-item__title">Каталог товаров</a></li>
-        <li class="menu-item"><a href="/knitwork.html" class="menu-item__title">Вязание на заказ</a></li>
-        <li class="menu-item"><a href="/search.html" class="menu-item__title"><span class="menu-item__search"></span>Поиск по сайту</a></li>
-        <li class="menu-item"><a href="/cart.html" class="menu-item__title"><span class="menu-item__cart"></span>Корзина: пока пуста</a></li>
-      </ul>
-    </nav>
+    <main>
+      <!-- блок "Милые штучки" с двумя кнопками -->
+      <section class="cute-stuff">
+        <h1 class="cute-stuff__title">Милые штучки ручной работы для дома</h1>
+        <!-- блок кнопки раз -->
+        <a href="#" class="interior-btn">Предметы интерьера</a> <!-- иконка - псевдоэлемент -->
+        <!-- блок кнопки два -->
+        <a href="#" class="toys-btn">Детские игрушки</a> <!-- иконка - псевдоэлемент -->
+      </section>
 
-    <!-- блок "Милые штучки" с двумя кнопками -->
-    <section class="cute-stuff">
-      <h1 class="cute-stuff__title">Милые штучки ручной работы для дома</h1>
-      <!-- блок кнопки раз -->
-      <div class="interior-btn">
-        <div class="interior-btn__title">Предметы интерьера</div>
-        <span class="interior-btn__logo"></span>
-      </div>
-      <!-- блок кнопки два -->
-      <div class="toys-btn">
-        <div class="toys-btn__title">Детские игрушки</div>
-        <span class="toys-btn__logo"></span>
-      </div>
-    </section>
-
-    <!-- блок Товар Недели -->
-    <main class="featured">
-      <!-- объединяю всё описание товара недели в общий блок -->
-      <article class="featured-item">
+      <!-- блок Товар Недели -->
+        <!-- объединяю всё описание товара недели в общий блок -->
+      <section class="featured-item">
         <h3 class="featured-item__title">Вязаные корзинки</h3>
-        <div class="featured-item__best-product">Товар недели</div>
-        <div class="featured-item__description">
-          <p class="">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
-        </div>
-        <table class="featured-item__features">
-          <tr>
-            <td>Цвет</td>
-            <td>"Тиффани"/серый</td>
-          </tr>
-          <tr>
-            <td>Диаметр</td>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <td>Высота</td>
-            <td>15 см</td>
-          </tr>
-        </table>
-        <div class="featured-item__img">
-          <img src="http://placehold.it/260x315" alt="Товар недели">
-        </div>
+        <span class="featured-item__best-product">Товар недели</span>
+        <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
+        <dl class="featured-item__details">
+          <dt>Цвет</dt>
+          <dd>"Тиффани"/серый</dd>
+          <dt>Диаметр</dt>
+          <dd>25 см</dd>
+          <dt>Высота</dt>
+          <dd>15 см</dd>
+        </dl>
+        <img  class="featured-item__img" src="http://placehold.it/260x315" alt="Товар недели">
         <div class="featured-item__price">Цена: 990 руб.</div>
         <a href="#" class="featured-item__btn  ghost-btn">Заказать</a>
-      </article>
-    </main>
-    <!-- ~~~~~~~~~~ не забыть декоративный зигзаг!!!~~~~~~~~~ -->
+      </section>
 
-    <!-- блок "Коротко о нас", вставлены плейсхолдеры вместо иконок -->
-    <section class="about">
-      <h3 class="about__title">Коротко о нас</h3>
-      <div class="about-item">
-        <span class="about-item__logo"><img src="http://placehold.it/33x38" alt="иконка"></span>
-        <p class="about-item__title">Экологически чистые материалы</p>
-        <span class="about-item__logo"><img src="http://placehold.it/33x38" alt="иконка"></span>
-        <p class="about-item__title">Скандинавский стиль по российской цене</p>
-        <span class="about-item__logo"><img src="http://placehold.it/33x38" alt="иконка"></span>
-        <p class="about-item__title">Увеличивает лайки на фотографиях</p>
-        <span class="about-item__logo"><img src="http://placehold.it/33x38" alt="иконка"></span>
-        <p class="about-item__title">Связано вручную с любовью и умилением</p>
-        <span class="about-item__logo"><img src="http://placehold.it/33x38" alt="иконка"></span>
-        <p class="about-item__title">Поддержка отечественного производителя</p>
-        <span class="about-item__logo"><img src="http://placehold.it/33x38" alt="иконка"></span>
-        <p class="about-item__title">Поставляется в подарочной упаковке</p>
-      </div>
-    </section>
+      <!-- ~~~~~~~~~~ не забыть декоративный зигзаг!!!~~~~~~~~~ -->
 
-    <!-- блок Отзывов -->
-    <section class="feedback">
-      <h2 class="feedback__title">Отзывы</h2>
-      <p class="feedback__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      <p class="feedback__author">Анастасия Красильникова</p>
-      <p class="feedback__nickname">@misssssiskras</p>
-      <!-- стрелочки ротатора отзывов -->
-      <div class="feedback-nav">
-        <a href="/left" class="feedback-nav__left"><img src="http://placehold.it/130x52" alt="влево"></a>
-        <a href="/right" class="feedback-nav__right"><img src="http://placehold.it/130x52" alt="вправо"></a>
-      </div>
-      <!-- кнопка "Написать" ниже ротатора -->
-      <a href="#" class="feedback__btn  ghost-btn">Написать</a>
-    </section>
+      <!-- блок "Коротко о нас" -->
+      <section class="about">
+        <h3 class="about__title">Коротко о нас</h3>
+        <ul class="about-item">
+           <!-- все иконки - псевдоэлементами с помощью модификатора элемента -->
+          <li class="about-item__logo  about-item__logo--flower">
+            <p class="about-item__title">Экологически чистые материалы</p>
+          </li>
+          <li class="about-item__logo  about-item__logo--money">
+            <p class="about-item__title">Скандинавский стиль по российской цене</p>
+          </li>
+          <li class="about-item__logo  about-item__logo--heart">
+            <p class="about-item__title">Увеличивает лайки на фотографиях</p>
+          </li>
+          <li class="about-item__logo  about-item__logo--roll">
+            <p class="about-item__title">Связано вручную с любовью и умилением</p>
+          </li>
+          <li class="about-item__logo  about-item__logo--rocket">
+            <p class="about-item__title">Поддержка отечественного производителя</p>
+          </li>
+          <li class="about-item__logo  about-item__logo--gift">
+            <p class="about-item__title">Поставляется в подарочной упаковке</p>
+          </li>
+        </ul>
+      </section>
 
-    <!-- ~~~~~~~~~~ не забыть декоративный зигзаг!!!~~~~~~~~~ -->
+      <!-- блок Отзывов -->
+      <section class="feedback">
+        <h3 class="feedback__title">Отзывы</h3>
+        <p class="feedback__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных   инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают   больше лайков!</p>
+        <p class="feedback__author">Анастасия Красильникова</p>
+        <a href="#" class="feedback__nickname">@misssssiskras</a>
+        <!-- стрелочки ротатора отзывов, изображение бэкграундом -->
+        <div class="feedback-nav">
+          <a href="/left" class="feedback-nav__left"></a>
+          <a href="/right" class="feedback-nav__right"></a>
+        </div>
+        <!-- кнопка "Написать" ниже ротатора -->
+        <a href="#" class="feedback__btn  ghost-btn">Написать</a>
+      </section>
 
-    <!-- блок футера страницы -->
-    <footer class="page-footer">
+      <!-- ~~~~~~~~~~ не забыть декоративный зигзаг!!!~~~~~~~~~ -->
+
       <!-- блок для контактов -->
       <section class="contacts">
-        <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__info">
-          <tr>
-            <td>e-mail:</td>
-            <td>info@mimimishkashop.ru</td>
-          </tr>
-          <tr>
-            <td>адрес:</td>
-            <td>г.Санкт-Петербург, ул.Большая конюшенная, д.19/8, офис 101</td>
-          </tr>
-        </table>
+        <h5 class="contacts__title">Контакты</h5>
+        <dl class="contacts__info">
+          <dt>e-mail:</dt>
+          <dd>info@mimimishkashop.ru</dd>
+          <dt>адрес:</dt>
+          <dd>г.Санкт-Петербург, ул.Большая конюшенная, д.19/8, офис 101</dd>
+        </dl>
       </section>
       <!-- блок для карты -->
       <div class="page-footer__map">
@@ -136,21 +121,27 @@
       </div>
       <!-- кнопка "Напишите нам" ниже карты -->
       <a href="#" class="page-footer__btn  ghost-btn">Напишите нам</a>
+
+    </main>
+
+    <!-- блок футера страницы -->
+    <footer class="page-footer">
       <!-- блок с соц кнопками -->
       <div class="social">
-        <span class="social__inst">IN</span>
-        <span class="social__fb">FB</span>
-        <span class="social__twitter">TW</span>
+        <a href="https://www.instagram.com/htmlacademy" class="social__inst">IN</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__fb">FB</a>
+        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter">TW</a>
       </div>
       <!-- блок Разработано -->
       <div class="developed">
         <span class="developed__title">Разработано</span>
-        <span class="developed__logo"><img src="http://placehold.it/34x27" alt="html-academy"></span>
+        <a href="https://htmlacademy.ru" class="developed__logo"><img src="http://placehold.it/34x27" alt="html-academy"></a> <!-- вместо img затем svg-иконка -->
       </div>
     </footer>
 
   </div>
 
   <script src="js/main-menu.js"></script>
+
   </body>
 </html>
