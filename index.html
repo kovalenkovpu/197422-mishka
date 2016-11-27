@@ -18,18 +18,18 @@
       <!-- блок главного меню-бургер -->
       <nav class="main-menu  main-menu--visible">
         <!-- логотип бургер -->
-        <button class="menu-item__toggle"><img src="http://placehold.it/20x14" alt="Меню"></button>
+        <button class="main-menu__toggle"><img src="http://placehold.it/20x14" alt="Меню"></button>
         <ul>
           <!-- элементы меню бургера -->
-          <li class="menu-item"><a href="/catalogue.html" class="menu-item__title">Каталог товаров</a></li>
-          <li class="menu-item"><a href="/knitwork.html" class="menu-item__title">Вязание на заказ</a></li>
-          <li class="menu-item"><a href="/search.html" class="menu-item__title"><span class="menu-item__search"></span>Поиск по сайту</a>  </li>
-          <li class="menu-item"><a href="/cart.html" class="menu-item__title"><span class="menu-item__cart"></span>Корзина: пока пуста</a></li>
+          <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
+          <li class="main-menu-item"><a href="/knitwork.html" class="main-menu-item__title">Вязание на заказ</a></li>
+          <li class="main-menu-item"><a href="/search.html" class="main-menu-item__title"><span class="main-menu-item__search"></span>Поиск по сайту</a>  </li>
+          <li class="main-menu-item"><a href="/cart.html" class="main-menu-item__title"><span class="main-menu-item__cart"></span>Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="main-wrapper">
       <!-- блок "Милые штучки" с двумя кнопками -->
       <section class="cute-stuff">
         <h1 class="cute-stuff__title">Милые штучки ручной работы для дома</h1>
@@ -40,12 +40,12 @@
       </section>
 
       <!-- блок Товар Недели -->
-        <!-- объединяю всё описание товара недели в общий блок -->
-      <section class="featured-item">
-        <h3 class="featured-item__title">Вязаные корзинки</h3>
-        <span class="featured-item__best-product">Товар недели</span>
-        <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
-        <dl class="featured-item__details">
+      <!-- объединяю всё описание товара недели в общий блок -->
+      <section class="best-item">
+        <h3 class="best-item__title">Вязаные корзинки</h3>
+        <span class="best-item__best-product">Товар недели</span>
+        <p class="best-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
+        <dl class="best-item__details">
           <dt>Цвет</dt>
           <dd>"Тиффани"/серый</dd>
           <dt>Диаметр</dt>
@@ -53,9 +53,9 @@
           <dt>Высота</dt>
           <dd>15 см</dd>
         </dl>
-        <img  class="featured-item__img" src="http://placehold.it/260x315" alt="Товар недели">
-        <div class="featured-item__price">Цена: 990 руб.</div>
-        <a href="#" class="featured-item__btn  ghost-btn">Заказать</a>
+        <img  class="best-item__img" src="http://placehold.it/260x315" alt="Товар недели">
+        <div class="best-item__price">Цена: 990 руб.</div>
+        <a href="#" class="best-item__btn  ghost-btn">Заказать</a>
       </section>
 
       <!-- ~~~~~~~~~~ не забыть декоративный зигзаг!!!~~~~~~~~~ -->
