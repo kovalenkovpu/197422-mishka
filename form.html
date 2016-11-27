@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, user-scalable=no">
+    <title>HTML Academy: Мишка. Каталог</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+  <!-- обертка для всего содержимого, flex -->
+  <div class="page-wrapper">
+
+    <!-- блок основного хедера страницы -->
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img src="http://placehold.it/86x35" alt="Мишка"> <!-- временная замена лого -->
+      </a>
+      <!-- блок главного меню-бургер -->
+      <nav class="main-menu  main-menu--visible">
+        <!-- логотип бургер -->
+        <button class="main-menu__toggle"><img src="http://placehold.it/20x14" alt="Меню"></button>
+        <ul>
+          <!-- элементы меню бургера -->
+          <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
+          <li class="main-menu-item"><a href="/knitwork.html" class="main-menu-item__title">Вязание на заказ</a></li>
+          <li class="main-menu-item"><a href="/search.html" class="main-menu-item__title"><span class="main-menu-item__search"></span>Поиск по сайту</a>  </li>
+          <li class="main-menu-item"><a href="/cart.html" class="main-menu-item__title"><span class="main-menu-item__cart"></span>Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-wrapper">
+      <!-- блок Вязание на заказ -->
+      <section class="page-name">
+        <h1 class="page-name__title">Вязание на заказ</h1>
+      </section>
+
+      <!-- блок формы заказа-->
+      <section class="order-wrapper">
+        <p class="order-form__title">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с     вами, чтобы уточнить детали.</p>
+        <form action="#" class="order-form" method="post">
+          <!-- блок выбора типа -->
+          <fieldset class="order-type">
+            <legend class="order-form__intro">ТИП</legend>
+            <label><input type="radio" name="order-1" value="order_1" checked>Аксессуар для интерьера</label>
+            <label><input type="radio" name="order-1" value="order_2">Детская игрушка</label>
+          </fieldset>
+          <!-- блок выбора цвета -->
+          <fieldset class="order-color">
+            <legend class="order-form__intro">ЦВЕТ</legend>
+            <label><input type="checkbox" name="order-color-1" value="order-color-1" checked>Белый</label>
+            <label><input type="checkbox" name="order-color-2" value="order-color-2" checked>Серый</label>
+            <label><input type="checkbox" name="order-color-2" value="order-color-2">"Тиффани"</label>
+            <label><input type="checkbox" name="order-color-2" value="order-color-2">Черный</label>
+            <label><input type="checkbox" name="order-color-2" value="order-color-2">Розовый</label>
+            <label><input type="checkbox" name="order-color-2" value="order-color-2">Оранжевый</label>
+          </fieldset>
+          <!-- блок ввода ФИО данных -->
+          <fieldset class="order-personal">
+            <legend class="order-form__intro">ФИО</legend>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+            <label for="lastname">Фамилия:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*" required>
+            <label for="patronymic">Отчество:</label>
+            <input type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+          </fieldset>
+          <!-- блок ввода телефона -->
+          <fieldset class="order-phone">
+            <legend class="order-form__intro">ТЕЛ</legend>
+            <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+            <span class="order-phone__logo"><img src="http://placehold.it/25x24" alt="Тел."></span>
+          </fieldset>
+          <!-- блок ввода email -->
+          <fieldset class="order-mail">
+            <legend class="order-form__intro">E-MAIL</legend>
+            <input type="email" id="email" name="email" placeholder="Ваш Email*" required>
+            <span class="order-mail__logo"><img src="http://placehold.it/25x24" alt="Почта"></span>
+          </fieldset>
+          <!-- блок ввода дополнительных данных -->
+          <fieldset class="order-extra">
+            <legend class="order-form__intro">ДОП</legend>
+            <textarea id="extra-info" name="extra-info" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <p class="order-form__note">*Поля обязательны для заполнения</p>
+          <button type="submit" class="order-form__btn  ghost-btn">Отправить заказ</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- блок футера страницы -->
+    <footer class="page-footer">
+      <!-- блок с соц кнопками -->
+      <div class="social">
+        <a href="https://www.instagram.com/htmlacademy" class="social__inst">IN</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__fb">FB</a>
+        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter">TW</a>
+      </div>
+      <!-- блок Разработано -->
+      <div class="developed">
+        <span class="developed__title">Разработано</span>
+        <a href="https://htmlacademy.ru" class="developed__logo"><img src="http://placehold.it/34x27" alt="html-academy"></a> <!-- вместо img затем svg-иконка -->
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/main-menu.js"></script>
+  </body>
+</html>
