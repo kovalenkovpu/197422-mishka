@@ -54,11 +54,11 @@
 }
 .interior-btn,
 .toys-btn {
-   &::after {
-     content: "";
-     display: block;
-     position: absolute;
-     opacity: 0.5;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
   }
 }
 .interior-btn::after {
