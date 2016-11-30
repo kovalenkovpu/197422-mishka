@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=320, user-scalable=no">
     <title>HTML Academy: Мишка. Каталог</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <!-- обертка для всего содержимого, flex -->
@@ -13,18 +13,17 @@
     <!-- блок основного хедера страницы -->
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/86x35" alt="Мишка"> <!-- временная замена лого -->
       </a>
       <!-- блок главного меню-бургер -->
-      <nav class="main-menu  main-menu--visible">
+      <nav class="main-menu">
         <!-- логотип бургер -->
-        <button class="main-menu__toggle"><img src="http://placehold.it/20x14" alt="Меню"></button>
+        <button class="main-menu__toggle"></button>
         <ul>
           <!-- элементы меню бургера -->
           <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
           <li class="main-menu-item"><a href="/knitwork.html" class="main-menu-item__title">Вязание на заказ</a></li>
-          <li class="main-menu-item"><a href="/search.html" class="main-menu-item__title"><span class="main-menu-item__search"></span>Поиск по сайту</a>  </li>
-          <li class="main-menu-item"><a href="/cart.html" class="main-menu-item__title"><span class="main-menu-item__cart"></span>Корзина: пока пуста</a></li>
+          <li class="main-menu-item"><span class="main-menu-item__search"></span><a href="/search.html" class="main-menu-item__title">Поиск по сайту</a></li>
+          <li class="main-menu-item"><span class="main-menu-item__cart"></span><a href="/cart.html" class="main-menu-item__title">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </header>
@@ -50,10 +49,10 @@
             <legend class="order-form__intro">ЦВЕТ</legend>
             <label><input type="checkbox" name="order-color-1" value="order-color-1" checked>Белый</label>
             <label><input type="checkbox" name="order-color-2" value="order-color-2" checked>Серый</label>
-            <label><input type="checkbox" name="order-color-2" value="order-color-2">"Тиффани"</label>
-            <label><input type="checkbox" name="order-color-2" value="order-color-2">Черный</label>
-            <label><input type="checkbox" name="order-color-2" value="order-color-2">Розовый</label>
-            <label><input type="checkbox" name="order-color-2" value="order-color-2">Оранжевый</label>
+            <label><input type="checkbox" name="order-color-3" value="order-color-3">"Тиффани"</label>
+            <label><input type="checkbox" name="order-color-4" value="order-color-4">Черный</label>
+            <label><input type="checkbox" name="order-color-5" value="order-color-5">Розовый</label>
+            <label><input type="checkbox" name="order-color-6" value="order-color-6">Оранжевый</label>
           </fieldset>
           <!-- блок ввода ФИО данных -->
           <fieldset class="order-personal">
@@ -69,13 +68,13 @@
           <fieldset class="order-phone">
             <legend class="order-form__intro">ТЕЛ</legend>
             <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
-            <span class="order-phone__logo"><img src="http://placehold.it/25x24" alt="Тел."></span>
+            <span class="order-phone__logo"></span>
           </fieldset>
           <!-- блок ввода email -->
           <fieldset class="order-mail">
             <legend class="order-form__intro">E-MAIL</legend>
             <input type="email" id="email" name="email" placeholder="Ваш Email*" required>
-            <span class="order-mail__logo"><img src="http://placehold.it/25x24" alt="Почта"></span>
+            <span class="order-mail__logo"></span>
           </fieldset>
           <!-- блок ввода дополнительных данных -->
           <fieldset class="order-extra">
@@ -92,14 +91,14 @@
     <footer class="page-footer">
       <!-- блок с соц кнопками -->
       <div class="social">
-        <a href="https://www.instagram.com/htmlacademy" class="social__inst">IN</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social__fb">FB</a>
-        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter">TW</a>
+        <a href="https://www.instagram.com/htmlacademy" class="social__inst"></a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__fb"></a>
+        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter"></a>
       </div>
       <!-- блок Разработано -->
       <div class="developed">
         <span class="developed__title">Разработано</span>
-        <a href="https://htmlacademy.ru" class="developed__logo"><img src="http://placehold.it/34x27" alt="html-academy"></a> <!-- вместо img затем svg-иконка -->
+        <a href="https://htmlacademy.ru" class="developed__logo"></a> <!-- вместо img затем svg-иконка -->
       </div>
     </footer>
 

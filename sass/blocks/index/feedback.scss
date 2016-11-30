@@ -1,0 +1,41 @@
+.feedback  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 260px;
+  max-width: 320px;
+  padding: 30px;
+  padding-top: 0;
+  &__title {
+    font-family: "OpenSansBold";
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  &__content {
+    font-family: "OpenSansRegular";
+    font-size: 15px;
+    line-height: 30px;
+    color: $gray;
+    margin-bottom: 30px;
+  }
+  &__author {
+    font-family: "OpenSansBold";
+    font-size: 18px;
+  }
+  &__nickname {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+}
+.feedback-nav {
+  display: block;
+  margin-bottom: 35px;
+  &__left {
+    float: left;
+    background: url("../../img/icon-left-arrow.svg") no-repeat center;
+  }
+  &__right {
+    background: url("../../img/icon-right-arrow.svg") no-repeat center;
+  }
+}

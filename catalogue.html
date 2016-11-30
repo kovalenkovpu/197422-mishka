@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=320, user-scalable=no">
     <title>HTML Academy: Мишка. Каталог</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <!-- обертка для всего содержимого, flex -->
@@ -12,19 +12,17 @@
 
     <!-- блок основного хедера страницы -->
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/86x35" alt="Мишка"> <!-- временная замена лого -->
-      </a>
+      <a href="/index.html" class="page-header__logo"></a>
       <!-- блок главного меню-бургер -->
-      <nav class="main-menu  main-menu--visible">
+      <nav class="main-menu">
         <!-- логотип бургер -->
-        <button class="main-menu__toggle"><img src="http://placehold.it/20x14" alt="Меню"></button>
+        <button class="main-menu__toggle"></button>
         <ul>
           <!-- элементы меню бургера -->
           <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
           <li class="main-menu-item"><a href="/knitwork.html" class="main-menu-item__title">Вязание на заказ</a></li>
-          <li class="main-menu-item"><a href="/search.html" class="main-menu-item__title"><span class="main-menu-item__search"></span>Поиск по сайту</a>  </li>
-          <li class="main-menu-item"><a href="/cart.html" class="main-menu-item__title"><span class="main-menu-item__cart"></span>Корзина: пока пуста</a></li>
+          <li class="main-menu-item"><span class="main-menu-item__search"></span><a href="/search.html" class="main-menu-item__title">Поиск по сайту</a></li>
+          <li class="main-menu-item"><span class="main-menu-item__cart"></span><a href="/cart.html" class="main-menu-item__title">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </header>
@@ -34,39 +32,41 @@
       <h1 class="catalog__title">Каталог товаров</h1>
       <section class="catalog">
         <article class="catalog-item">
-          <a href="#" class="catalog-item__img"><img src="http://placehold.it/260x195" alt="Зайчик"></a>
+          <a href="#" class="catalog-item__img"><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик"></a>
           <h4 class="catalog-item__name"><a href="#">Зайчик-попрыгайчик</a></h4>
           <p class="catalog-item__description">Рост 30см, вес 200г</p>
           <p class="catalog-item__price">1 200 руб.</p>
-          <button class="catalog-item__cart" type="button" name="add-to-cart"><img src="http://placehold.it/21x19" alt="Корзина"></button>
+          <button class="catalog-item__cart" type="button" name="add-to-cart"></button>
         </article>
 
         <article class="catalog-item">
-          <a href="#" class="catalog-item__img"><img src="http://placehold.it/260x195" alt="Корзинка"></a>
+          <a href="#" class="catalog-item__img"><img src="img/photo-2-mobile@1x.jpg" alt="Корзинка"></a>
           <h4 class="catalog-item__name"><a href="#">Корзинка для белья</a></h4>
           <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
           <p class="catalog-item__price">690 руб.</p>
-          <button class="catalog-item__cart" type="submit" name="add-to-cart"><img src="http://placehold.it/21x19" alt="Корзина"></button>
+          <button class="catalog-item__cart" type="submit" name="add-to-cart"></button>
         </article>
 
         <article class="catalog-item">
-          <a href="#" class="catalog-item__img"><img src="http://placehold.it/260x195" alt="Корзинка для игрушек"></a>
+          <a href="#" class="catalog-item__img"><img src="img/photo-3-mobile@1x.jpg" alt="Корзинка для игрушек"></a>
           <h4 class="catalog-item__name"><a href="#">Большая корзинка для игрушек</a></h4>
           <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
           <p class="catalog-item__price">1 500 руб.</p>
-          <button class="catalog-item__cart" type="submit" name="add-to-cart"><img src="http://placehold.it/21x19" alt="Корзина"></button>
+          <button class="catalog-item__cart" type="submit" name="add-to-cart"></button>
         </article>
       </section>
 
       <!-- блок процесса производства -->
       <section class="info-block">
-        <span class="info-block__logo"><img src="http://placehold.it/32x22" alt="Производство"></span>
+        <span class="info-block__logo"></span>
         <h4 class="info-block__title">Процесс производства</h4>
-        <video controls preload="metadata" poster="http://placehold.it/260x150" width="260" height="150">
-          <source src="/video.mp4" type="video/mp4">
-          <source src="/video.ogv" type="video/ogg">
-          <source src="/video.webm" type="video/webm">
-        </video>
+        <div class="info-block__video-wrapper">
+          <video preload="metadata" poster="img/video-mobile@1x.jpg" width="260" height="150">
+            <source src="/video.mp4" type="video/mp4">
+            <source src="/video.ogv" type="video/ogg">
+            <source src="/video.webm" type="video/webm">
+          </video>
+        </div>
         <div class="info-block__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши   товары.</div>
         <a href="#" class="info-block__btn  ghost-btn">Сделать заказ</a>
       </section>
@@ -76,14 +76,14 @@
     <footer class="page-footer">
       <!-- блок с соц кнопками -->
       <div class="social">
-        <a href="https://www.instagram.com/htmlacademy" class="social__inst">IN</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social__fb">FB</a>
-        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter">TW</a>
+        <a href="https://www.instagram.com/htmlacademy" class="social__inst"></a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__fb"></a>
+        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter"></a>
       </div>
       <!-- блок Разработано -->
       <div class="developed">
         <span class="developed__title">Разработано</span>
-        <a href="https://htmlacademy.ru" class="developed__logo"><img src="http://placehold.it/34x27" alt="html-academy"></a> <!-- вместо img затем svg-иконка -->
+        <a href="https://htmlacademy.ru" class="developed__logo"></a> <!-- вместо img затем svg-иконка -->
       </div>
     </footer>
 

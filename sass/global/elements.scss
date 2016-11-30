@@ -1,0 +1,38 @@
+.green-btn {
+  display: block;
+  position: relative;
+  min-width: 220px;
+  padding: 30px;
+  text-decoration: none;
+  font-family: "OpenSansBold";
+  font-size: 19px;
+  line-height: 24px;
+  color: $bg-color;
+}
+.ghost-btn {
+  display: block;
+  width: 260px;
+  padding: 18px 0;
+  font-family: "OpenSansBold";
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $gray;
+  box-shadow: inset 0 0 0 2px $gray;
+  &:hover {
+    background-color: $gray;
+    color: $bg-color;
+  }
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+    background-color: $gray;
+  }
+}
+.arrow-btn {
+    display: block;
+    width: 130px;
+    height: 52px;
+    border: none;
+    box-shadow: inset 0 0 0 1px $box-shadow;
+  }

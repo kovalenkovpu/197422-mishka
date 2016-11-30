@@ -1,0 +1,40 @@
+.about {
+  display: block;
+  min-width: 260px;
+  max-width: 320px;
+  padding: 30px;
+  &__title {
+    font-family: "OpenSansBold";
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+.about-item {
+  list-style: none;
+  margin-bottom: 30px;
+  &__title {
+    font-family: "OpenSansBold";
+    font-size: 17px;
+    padding-top: 30px;
+  }
+}
+.about-item__logo {
+  &--flower {
+    @include about-icon("../../../img/icon-feature-1.svg", 32px, 38px);
+  }
+  &--money {
+    @include about-icon("../../../img/icon-feature-3.svg", 47px, 28px);
+  }
+  &--heart {
+    @include about-icon("../../../img/icon-feature-5.svg", 34px, 28px);
+  }
+  &--roll {
+    @include about-icon("../../../img/icon-feature-2.svg", 35px, 35px);
+  }
+  &--rocket {
+    @include about-icon("../../../img/icon-feature-4.svg", 55px, 24px);
+  }
+  &--gift {
+    @include about-icon("../../../img/icon-feature-6.svg", 33px, 33px);
+  }
+}

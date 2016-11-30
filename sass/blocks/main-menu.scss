@@ -1,0 +1,69 @@
+.main-menu {
+  display: none;
+  &--visible {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  &__toggle {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    //контейнер блока больше изображения для удобства
+    //использования на мобильных
+    width: 26px;
+    height: 20px;
+    border: none;
+    background: url(../../img/icon-menu-open.svg) no-repeat top right;
+    background-size: 20px 14px;
+  }
+}
+.main-menu ul {
+  display: block;
+  margin-top: 80px;
+  list-style: none;
+  padding-left: 0;
+}
+.main-menu-item {
+  &__title {
+    display: block;
+    width: 320px;
+    height: 80px;
+    padding-top: 30px;
+    padding-left: 75px;
+    text-decoration: none;
+    font-family: "OpenSansBold";
+    font-size: 17px;
+    line-height: 24px;
+    color: $black;
+    box-shadow: inset 0 -1px 0 0 $box-shadow;
+    background-color: $bg-color;
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__search {
+    display: block;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 18px;
+    height: 18px;
+    background: url("../../img/icon-search.svg") no-repeat center;
+    opacity: 0.2;
+  }
+  &__cart {
+    display: block;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 21px;
+    height: 19px;
+    background: url("../../img/icon-cart.svg") no-repeat center;
+    opacity: 0.2;
+  }
+}

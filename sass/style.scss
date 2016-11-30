@@ -1,0 +1,31 @@
+//импорт шрифтов, переменных, миксинов
+@import "global/fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+
+//импорт сетки
+@import "blocks/grid.scss";
+
+//импорт универсальных модулей
+@import "blocks/page-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/page-footer.scss";
+
+//импорт модулей главной страницы
+@import "global/elements.scss";
+@import "blocks/index/cute-stuff.scss";
+@import "blocks/page-main.scss";
+@import "blocks/index/best-item.scss";
+@import "blocks/index/about.scss";
+@import "blocks/index/feedback.scss";
+@import "blocks/index/contacts.scss";
+@import "blocks/index/map.scss";
+
+//импорт страницы Каталога
+@import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/info-block.scss";
+@import "blocks/catalog/catalog-item.scss";
+
+//импорт страницы формы
+@import "blocks/form/page-name-form.scss";
+@import "blocks/form/order-form.scss";

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=320, user-scalable=no">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <!-- обертка для всего содержимого, flex -->
@@ -12,19 +12,17 @@
 
     <!-- блок основного хедера страницы -->
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="http://placehold.it/86x35" alt="Мишка"> <!-- временная замена лого -->
-      </a>
+      <a class="page-header__logo"></a>
       <!-- блок главного меню-бургер -->
-      <nav class="main-menu  main-menu--visible">
+      <nav class="main-menu main-menu--visible">
         <!-- логотип бургер -->
-        <button class="main-menu__toggle"><img src="http://placehold.it/20x14" alt="Меню"></button>
+        <button class="main-menu__toggle"></button>
         <ul>
           <!-- элементы меню бургера -->
           <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
           <li class="main-menu-item"><a href="/knitwork.html" class="main-menu-item__title">Вязание на заказ</a></li>
-          <li class="main-menu-item"><a href="/search.html" class="main-menu-item__title"><span class="main-menu-item__search"></span>Поиск по сайту</a>  </li>
-          <li class="main-menu-item"><a href="/cart.html" class="main-menu-item__title"><span class="main-menu-item__cart"></span>Корзина: пока пуста</a></li>
+          <li class="main-menu-item"><span class="main-menu-item__search"></span><a href="/search.html" class="main-menu-item__title">Поиск по сайту</a></li>
+          <li class="main-menu-item"><span class="main-menu-item__cart"></span><a href="/cart.html" class="main-menu-item__title">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </header>
@@ -32,11 +30,11 @@
     <main class="main-wrapper">
       <!-- блок "Милые штучки" с двумя кнопками -->
       <section class="cute-stuff">
-        <h1 class="cute-stuff__title">Милые штучки ручной работы для дома</h1>
+        <h1 class="cute-stuff__title">Милые штуки ручной работы для дома</h1>
         <!-- блок кнопки раз -->
-        <a href="#" class="interior-btn">Предметы интерьера</a> <!-- иконка - псевдоэлемент -->
+        <a href="#" class="interior-btn  green-btn">Предметы<br>интерьера</a> <!-- иконка - псевдоэлемент -->
         <!-- блок кнопки два -->
-        <a href="#" class="toys-btn">Детские игрушки</a> <!-- иконка - псевдоэлемент -->
+        <a href="#" class="toys-btn  green-btn">Детские<br>игрушки</a> <!-- иконка - псевдоэлемент -->
       </section>
 
       <!-- блок Товар Недели -->
@@ -46,14 +44,14 @@
         <span class="best-item__best-product">Товар недели</span>
         <p class="best-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах</p>
         <dl class="best-item__details">
-          <dt>Цвет</dt>
+          <dt>Цвет:</dt>
           <dd>"Тиффани"/серый</dd>
-          <dt>Диаметр</dt>
+          <dt>Диаметр:</dt>
           <dd>25 см</dd>
-          <dt>Высота</dt>
+          <dt>Высота:</dt>
           <dd>15 см</dd>
         </dl>
-        <img  class="best-item__img" src="http://placehold.it/260x315" alt="Товар недели">
+        <img class="best-item__img" src="img/triple-set-mobile@1x.jpg" alt="Товар недели">
         <div class="best-item__price">Цена: 990 руб.</div>
         <a href="#" class="best-item__btn  ghost-btn">Заказать</a>
       </section>
@@ -62,7 +60,7 @@
 
       <!-- блок "Коротко о нас" -->
       <section class="about">
-        <h3 class="about__title">Коротко о нас</h3>
+        <h3 class="about__title">Коротко о нас:</h3>
         <ul class="about-item">
           <!-- все иконки - псевдоэлементами с помощью модификатора элемента -->
           <li class="about-item__logo  about-item__logo--flower">
@@ -94,8 +92,8 @@
         <a href="#" class="feedback__nickname">@misssssiskras</a>
         <!-- стрелочки ротатора отзывов, изображение бэкграундом -->
         <div class="feedback-nav">
-          <button class="feedback-nav__left" type="button"></button>
-          <button class="feedback-nav__right" type="button"></button>
+          <button class="feedback-nav__left  arrow-btn" type="button"></button>
+          <button class="feedback-nav__right  arrow-btn" type="button"></button>
         </div>
         <!-- кнопка "Написать" ниже ротатора -->
         <a href="#" class="feedback__btn  ghost-btn">Написать</a>
@@ -110,13 +108,11 @@
           <dt>e-mail:</dt>
           <dd>info@mimimishkashop.ru</dd>
           <dt>адрес:</dt>
-          <dd>г.Санкт-Петербург, ул.Большая конюшенная, д.19/8, офис 101</dd>
+          <dd>г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</dd>
         </dl>
       </section>
       <!-- блок для карты -->
-      <div class="map">
-        <img src="http://placehold.it/310x457" alt="Карта">
-      </div>
+      <div class="map"></div>
       <!-- кнопка "Напишите нам" ниже карты -->
       <a href="#" class="contact-us  ghost-btn">Напишите нам</a>
 
@@ -126,14 +122,15 @@
     <footer class="page-footer">
       <!-- блок с соц кнопками -->
       <div class="social">
-        <a href="https://www.instagram.com/htmlacademy" class="social__inst">IN</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social__fb">FB</a>
-        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter">TW</a>
+        <a href="https://www.instagram.com/htmlacademy" class="social__inst"></a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__fb"></a>
+        <a href="https://twitter.com/htmlacademy_ru" class="social__twitter"></a>
       </div>
       <!-- блок Разработано -->
       <div class="developed">
         <span class="developed__title">Разработано</span>
-        <a href="https://htmlacademy.ru" class="developed__logo"><img src="http://placehold.it/34x27" alt="html-academy"></a> <!-- вместо img затем svg-иконка -->
+        <a href="https://htmlacademy.ru" class="developed__logo">
+        </a>
       </div>
     </footer>
 

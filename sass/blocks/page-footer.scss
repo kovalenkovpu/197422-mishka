@@ -1,0 +1,81 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  min-width: 260px;
+  padding: 0 30px 0 30px;
+  background-color: $footer-bg-color;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  box-shadow: inset 0 -1px 0 0 $footer-line;
+  &__inst,
+  &__fb,
+  &__twitter {
+    display: block;
+  }
+  &__inst {
+    width: 22px;
+    height: 22px;
+    margin-right: 40px;
+    @include notToColor("../../img/icon-insta.svg");
+    &:hover {
+      background-color: $dark-green;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  &__fb {
+    width: 15px;
+    height: 28px;
+    margin-right: 40px;
+    @include notToColor("../../img/icon-fb.svg");
+    &:hover {
+      background-color: $dark-green;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  &__twitter {
+    width: 24px;
+    height: 21px;
+    @include notToColor("../../img/icon-twitter.svg");
+    &:hover {
+      background-color: $dark-green;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+.developed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  &__title {
+    display: block;
+    padding-right: 30px;
+    font-family: "OpenSansBold";
+    font-size: 19px;
+    &:visited {
+      opacity: 0.3;
+    }
+  }
+  &__logo {
+    width: 27px;
+    height: 35px;
+    @include toColorLight("../../img/logo-htmlacademy.svg");
+    &:hover {
+      background-color: $dark-green;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

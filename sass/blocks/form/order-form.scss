@@ -1,0 +1,112 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0 30px 30px 30px;
+  width: 260px;
+  &__title {
+    display: block;
+    max-width: 320px;
+    padding: 30px;
+    font-family: "OpenSansRegular";
+    font-size: 13px;
+    line-height: 24px;
+  }
+  &__intro {
+    font-family: "OpenSansBold";
+    font-size: 17px;
+    line-height: 16px;
+    color: $light-green;
+//    text-transform: uppercase;
+  }
+  &__note {
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__btn {
+    margin-top: 30px;
+    border: none;
+    background-color: $bg-color;
+  }
+}
+.order-form__intro {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    margin-left: 25px;
+    background-color: $light-green;
+  }
+}
+fieldset {
+  margin-bottom: 20px;
+  border: none;
+  label {
+    font-family: "OpenSansBold";
+    font-size: 17px;
+    line-height: 18px;
+    padding: 20px 0 20px 0;
+    display: block;
+  }
+}
+fieldset label input {
+  margin-right: 20px;
+}
+.order-personal,
+.order-phone,
+.order-mail {
+  input {
+    width: 260px;
+    height: 45px;
+    border: none;
+    border-bottom: 2px solid $black;
+    font-family: "OpenSansRegular";
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
+.order-phone {
+  position: relative;
+  &__logo {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 8px;
+    bottom: 13px;
+    background: url("../../../img/icon-phone.svg") no-repeat center;
+    opacity: 0.2;
+  }
+}
+.order-mail {
+  position: relative;
+  &__logo {
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    right: 4px;
+    bottom: 13px;
+    background: url("../../../img/icon-mail.svg") no-repeat center;
+    opacity: 0.2;
+  }
+}
+.order-extra {
+  textarea {
+    width: 260px;
+    height: 140px;
+    margin-top: 23px;
+    padding: 15px;
+    border: none;
+    box-shadow: inset 0 0 0 2px $black;
+    font-family: "OpenSansRegular";
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
+

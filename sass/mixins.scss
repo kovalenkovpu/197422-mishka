@@ -1,0 +1,36 @@
+// этот миксин добавляет псевдоэлемент-иконку
+// после чего красит ее в #63d1bb
+@mixin about-icon($url, $width, $height) {
+  &::before {
+    content: "";
+    display: block;
+    margin-top: 30px;
+    width: $width;
+    height: $height;
+    color: rgba(99, 209, 187, 1);
+    mask: url(#{$url});
+    mask-size: cover;
+    background-color: $light-green;
+  }
+}
+
+// этот миксин получает адрес маски
+// и красит элемент, к которому применён
+// в светло-зеленый цвет
+@mixin toColorLight($url) {
+  mask: url(#{$url});
+  mask-size: cover;
+  background-color: $light-green;
+}
+//аналогично в темный
+@mixin toColorDark($url) {
+  mask: url(#{$url});
+  mask-size: cover;
+  background-color: $dark-green;
+}
+//аналогично, в черный
+@mixin notToColor($url) {
+  mask: url(#{$url});
+  mask-size: cover;
+  background-color: $black;
+}
