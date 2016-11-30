@@ -1,14 +1,10 @@
 .page-name {
-  display: flex;
-  flex-direction: column;
-//  align-items: center;
+  display: block;
   min-width: 260px;
   max-width: 320px;
   &__title {
     display: block;
-    max-width: 320px;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    padding: 70px 0 70px 0;
     text-align: center;
     font-family: "OpenSansBold";
     font-size: 27px;

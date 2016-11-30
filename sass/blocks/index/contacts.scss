@@ -1,10 +1,6 @@
 .contacts {
   display: block;
-  min-width: 260;
-  max-width: 320px;
-  margin: 30px;
-  margin-top: 60px;
-  margin-bottom: 35px;
+  margin: 45px 30px 35px 30px;
   &__title {
     font-family: "OpenSansBold";
     font-size: 18px;
@@ -23,9 +19,8 @@
     }
     & dd {
       display: block;
-//      overflow: hidden;
       padding-right: 40px;
-      margin-left: 80px;
+      margin: 0 0 40px 80px;
     }
   }
 }

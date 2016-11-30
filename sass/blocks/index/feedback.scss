@@ -1,23 +1,19 @@
 .feedback  {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  min-width: 260px;
-  max-width: 320px;
+  display: block;
   padding: 30px;
   padding-top: 0;
   &__title {
     font-family: "OpenSansBold";
     font-size: 25px;
     line-height: 30px;
-    margin-bottom: 30px;
   }
   &__content {
+    display: block;
     font-family: "OpenSansRegular";
     font-size: 15px;
     line-height: 30px;
     color: $gray;
-    margin-bottom: 30px;
+    margin: 30px 0 30px 0;
   }
   &__author {
     font-family: "OpenSansBold";
@@ -30,12 +26,14 @@
 }
 .feedback-nav {
   display: block;
-  margin-bottom: 35px;
+  margin: 35px 0 35px 0;
+  font-size: 0;
   &__left {
-    float: left;
-    background: url("../../img/icon-left-arrow.svg") no-repeat center;
+    display: inline-block;
+    background: url("../img/icon-left-arrow.svg") no-repeat center;
   }
   &__right {
-    background: url("../../img/icon-right-arrow.svg") no-repeat center;
+    display: inline-block;
+    background: url("../img/icon-right-arrow.svg") no-repeat center;
   }
 }

@@ -1,12 +1,7 @@
 .cute-stuff {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  max-width: 320px;
-  min-width: 220px;
-  background: #f9f9f9;
-  background-image: url("../../img/hero-mobile@1x.jpg");
+  display: block;
+  background: $cute-stuff-bg;
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -10%;
 }
@@ -20,7 +15,6 @@
   line-height: 30px;
 }
 .interior-btn {
-  width: 100%;
   margin-top: 120px;
   background: $light-green;
   &:hover {
@@ -37,7 +31,6 @@
   }
 }
 .toys-btn {
-  width: 100%;
   background: $dark-green;
   &:hover {
     background: $dark-green-hover;
@@ -66,12 +59,12 @@
   height: 62px;
   right: 36px;
   top: 23px;
-  background: url("../../img/icon-interior.svg") no-repeat;
+  background: url("../img/icon-interior.svg") no-repeat;
 }
 .toys-btn::after {
   width: 60px;
   height: 60px;
   right: 26px;
   top: 20px;
-  background: url("../../img/icon-toy.svg") no-repeat;
+  background: url("../img/icon-toy.svg") no-repeat;
 }

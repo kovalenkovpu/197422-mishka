@@ -7,10 +7,10 @@
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  min-width: 260px;
+  width: 320px;
 }
 .order-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  display: block;
 }
