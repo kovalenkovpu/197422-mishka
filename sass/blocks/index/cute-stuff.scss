@@ -8,14 +8,13 @@
 .cute-stuff__title {
   width: 245px;
   margin: 0 auto;
-  margin-top: 75px;
+  padding: 75px 0 120px 0;
   font-family: "OpenSansBold";
   text-align: center;
   font-size: 27px;
   line-height: 30px;
 }
 .interior-btn {
-  margin-top: 120px;
   background: $light-green;
   &:hover {
     background: $light-green-hover;

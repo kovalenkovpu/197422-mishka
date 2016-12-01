@@ -1,5 +1,6 @@
 .info-block {
   display: block;
+  padding-bottom: 30px;
   margin: 30px;
   box-shadow: inset 0 0 0 1px $box-shadow;
   &__logo {
@@ -29,8 +30,7 @@
     position: relative;
   }
   &__btn {
-    margin-bottom: 30px;
-    margin: 35px;
+    margin: 0 35px;
   }
 }
 .info-block__video-icon {

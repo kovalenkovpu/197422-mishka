@@ -14,7 +14,6 @@
 //импорт модулей главной страницы
 @import "global/elements.scss";
 @import "blocks/index/cute-stuff.scss";
-@import "blocks/page-main.scss";
 @import "blocks/index/best-item.scss";
 @import "blocks/index/about.scss";
 @import "blocks/index/feedback.scss";
@@ -29,4 +28,7 @@
 //импорт страницы формы
 @import "blocks/form/page-name-form.scss";
 @import "blocks/form/order-form.scss";
+@import "blocks/form/order-type.scss";
+@import "blocks/form/order-color.scss";
+@import "blocks/form/order-personal.scss";
 @import "blocks/form/fieldsets.scss";

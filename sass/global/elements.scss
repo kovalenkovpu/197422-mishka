@@ -1,5 +1,6 @@
 .green-btn {
   display: block;
+  position: relative;
   padding: 30px;
   text-decoration: none;
   font-family: "OpenSansBold";
@@ -9,6 +10,7 @@
 }
 .ghost-btn {
   display: block;
+  margin: 0 auto;
   padding: 18px 0;
   font-family: "OpenSansBold";
   font-size: 17px;

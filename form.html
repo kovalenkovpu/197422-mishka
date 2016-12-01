@@ -15,10 +15,10 @@
       <a href="index.html" class="page-header__logo">
       </a>
       <!-- блок главного меню-бургер -->
-      <nav class="main-menu">
+      <nav class="main-menu main-menu--visible">
         <!-- логотип бургер -->
         <button class="main-menu__toggle"></button>
-        <ul>
+        <ul class="main-menu-items">
           <!-- элементы меню бургера -->
           <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
           <li class="main-menu-item"><a href="/knitwork.html" class="main-menu-item__title">Вязание на заказ</a></li>
@@ -41,28 +41,34 @@
           <!-- блок выбора типа -->
           <fieldset class="order-type  fieldset-block">
             <legend class="order-form__intro">ТИП</legend>
-            <label><input type="radio" name="order-1" value="order_1" checked>Аксессуар для интерьера</label>
-            <label><input type="radio" name="order-1" value="order_2">Детская игрушка</label>
+            <input type="radio" class="order-type__input" id="order-1" name="order-type" checked>
+            <label class="order-type__label" for="order-1">Аксессуар для интерьера</label>
+            <input type="radio" class="order-type__input" id="order-2" name="order-type">
+            <label class="order-type__label" for="order-2">Детская игрушка</label>
           </fieldset>
           <!-- блок выбора цвета -->
           <fieldset class="order-color  fieldset-block">
             <legend class="order-form__intro">ЦВЕТ</legend>
-            <label><input type="checkbox" name="order-color-1" value="order-color-1" checked>Белый</label>
-            <label><input type="checkbox" name="order-color-2" value="order-color-2" checked>Серый</label>
-            <label><input type="checkbox" name="order-color-3" value="order-color-3">"Тиффани"</label>
-            <label><input type="checkbox" name="order-color-4" value="order-color-4">Черный</label>
-            <label><input type="checkbox" name="order-color-5" value="order-color-5">Розовый</label>
-            <label><input type="checkbox" name="order-color-6" value="order-color-6">Оранжевый</label>
+            <input type="checkbox" class="order-color__check" id="order-color-1" checked><label class="order-color__label" for="order-color-1">Белый</label>
+            <input type="checkbox" class="order-color__check" id="order-color-2" checked><label class="order-color__label" for="order-color-2">Серый</label>
+            <input type="checkbox" class="order-color__check" id="order-color-3">
+            <label class="order-color__label" for="order-color-3">"Тиффани"</label>
+            <input type="checkbox" class="order-color__check" id="order-color-4">
+            <label class="order-color__label" for="order-color-4">Черный</label>
+            <input type="checkbox" class="order-color__check" id="order-color-5">
+            <label class="order-color__label" for="order-color-5">Розовый</label>
+            <input type="checkbox" class="order-color__check" id="order-color-6">
+            <label class="order-color__label" for="order-color-6">Оранжевый</label>
           </fieldset>
           <!-- блок ввода ФИО данных -->
           <fieldset class="order-personal  fieldset-block">
             <legend class="order-form__intro">ФИО</legend>
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
-            <label for="lastname">Фамилия:</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*" required>
-            <label for="patronymic">Отчество:</label>
-            <input type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+            <label class="order-personal-label" for="name">Имя:</label>
+            <input class="order-personal-input" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+            <label class="order-personal-label" for="lastname">Фамилия:</label>
+            <input class="order-personal-input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*" required>
+            <label class="order-personal-label" for="patronymic">Отчество:</label>
+            <input class="order-personal-input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
           </fieldset>
           <!-- блок ввода телефона -->
           <fieldset class="order-phone  fieldset-block">
