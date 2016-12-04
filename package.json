@@ -27,5 +27,9 @@
   ],
   "engines": {
     "node": "6.7"
+  },
+  "dependencies": {
+    "normalize-scss": "^6.0.0",
+    "normalize.css": "^5.0.0"
   }
 }

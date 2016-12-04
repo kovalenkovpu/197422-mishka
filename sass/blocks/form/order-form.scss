@@ -1,0 +1,47 @@
+.order-title {
+  display: block;
+  max-width: 320px;
+  padding: 30px;
+  font-family: "OpenSansRegular";
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.order-form {
+  display: block;
+  margin: 0 30px 30px 30px;
+
+  &__intro {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-family: "OpenSansBold";
+    font-size: 17px;
+    line-height: 16px;
+    color: $light-green;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 100%;
+      margin-left: 25px;
+      background-color: $light-green;
+    }
+  }
+
+  &__note {
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    width: 100%;
+    border: none;
+    background-color: $bg-color;
+  }
+}

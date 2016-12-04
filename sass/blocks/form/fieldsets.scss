@@ -1,0 +1,62 @@
+.order-form__group {
+  margin-bottom: 20px;
+  border: none;
+
+  &--phone-order,
+  &--mail-order {
+    position: relative;
+  }
+}
+
+.order-form__group--mail-order,
+.order-form__group--phone-order {
+  input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-bottom: 2px solid $black;
+    font-family: "OpenSansRegular";
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
+
+.phone-order {
+
+  &__logo {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 8px;
+    bottom: 13px;
+    background: url("../img/icon-phone.svg") no-repeat center;
+    opacity: 0.2;
+  }
+}
+
+.mail-order {
+
+  &__logo {
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    right: 4px;
+    bottom: 13px;
+    background: url("../img/icon-mail.svg") no-repeat center;
+    opacity: 0.2;
+  }
+}
+
+.order-form__group--extra-order {
+  textarea {
+    width: 260px;
+    height: 140px;
+    margin-top: 23px;
+    padding: 15px;
+    border: none;
+    box-shadow: inset 0 0 0 2px $black;
+    font-family: "OpenSansRegular";
+    font-size: 17px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,32 @@
+.page-header__logo {
+  display: block;
+  height: 80px;
+  width: 86px;
+  margin: 0 auto;
+  background: url(../img/logo-mobile.svg) no-repeat center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+@media ($tablet-widths) {
+
+  .page-header__logo {
+    float: left;
+  }
+}
+
+
+@media ($desktop-widths) {
+
+  .page-header__logo {
+    position: absolute;
+    right: 50%;
+  }
+}
