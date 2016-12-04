@@ -1,9 +1,15 @@
-.fieldset-block {
+.order-form__group {
   margin-bottom: 20px;
   border: none;
+
+  &--phone-order,
+  &--mail-order {
+    position: relative;
+  }
 }
-.order-phone,
-.order-mail {
+
+.order-form__group--mail-order,
+.order-form__group--phone-order {
   input {
     width: 100%;
     height: 45px;
@@ -14,8 +20,9 @@
     line-height: 18px;
   }
 }
-.order-phone {
-  position: relative;
+
+.phone-order {
+
   &__logo {
     position: absolute;
     width: 25px;
@@ -26,8 +33,9 @@
     opacity: 0.2;
   }
 }
-.order-mail {
-  position: relative;
+
+.mail-order {
+
   &__logo {
     position: absolute;
     width: 32px;
@@ -38,7 +46,8 @@
     opacity: 0.2;
   }
 }
-.order-extra {
+
+.order-form__group--extra-order {
   textarea {
     width: 260px;
     height: 140px;

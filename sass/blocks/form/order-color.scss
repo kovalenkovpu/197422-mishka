@@ -1,6 +1,7 @@
 .order-color__check {
   display: none;
 }
+
 .order-color__label {
   position: relative;
   display: block;
@@ -8,8 +9,9 @@
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 18px;
-  &::before {
-    content: "";
+}
+
+.order-color__input-icon {
     position: absolute;
     top: 50%;
     margin-top: -20px;
@@ -17,20 +19,21 @@
     z-index: 1;
     width: 40px;
     height: 40px;
-    box-shadow: inset 0 0 0 2px #444444;
-  }
+    box-shadow: inset 0 0 0 2px $gray;
 }
+
 .order-color__check:checked {
-  & + .order-color__label::after {
+
+  & + .order-color__input-icon:before {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 10px;
     z-index: 2;
     width: 22px;
     height: 8px;
-    border-bottom: 2px solid #000000;
-    border-left: 2px solid #000000;
+    border-bottom: 2px solid $black;
+    border-left: 2px solid $black;
     transform: rotate(-45deg);
   }
 }

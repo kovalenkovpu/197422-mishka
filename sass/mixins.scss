@@ -2,12 +2,12 @@
   width: 320px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-widths) {
-    width: 640px;
+  @media ($tablet-widths) {
+    width: 768px;
   }
 
-  @media (min-width: $desktop-widths) {
-    width: 960px;
+  @media ($desktop-widths) {
+    width: 1150px;
   }
 }
 

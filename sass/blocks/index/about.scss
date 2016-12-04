@@ -1,6 +1,7 @@
 .about {
   display: block;
   padding: 30px;
+
   &__title {
     display: block;
     font-family: "OpenSansBold";
@@ -8,37 +9,123 @@
     line-height: 30px;
   }
 }
+
 .about-item {
   list-style: none;
   margin-bottom: 30px;
+
   &__title {
     font-family: "OpenSansBold";
     font-size: 17px;
+    padding-top: 20px;
+  }
+
+  &__logo {
+
+    &--flower {
+      padding-top: 20px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 37px;
+        background: url("../img/icon-feature-1.svg") no-repeat center;
+      }
+    }
+
+    &--money {
+      padding-top: 20px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 47px;
+        height: 27px;
+        background: url("../img/icon-feature-3.svg") no-repeat center;
+      }
+    }
+
+    &--heart {
+      padding-top: 20px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 28px;
+        background: url("../img/icon-feature-5.svg") no-repeat center;
+      }
+    }
+
+    &--roll {
+      padding-top: 20px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 34px;
+        height: 34px;
+        background: url("../img/icon-feature-2.svg") no-repeat center;
+      }
+    }
+
+    &--rocket {
+      padding-top: 20px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 54px;
+        height: 23px;
+        background: url("../img/icon-feature-4.svg") no-repeat center;
+      }
+    }
+
+    &--gift {
+      padding-top: 20px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 32px;
+        background: url("../img/icon-feature-6.svg") no-repeat center;
+      }
+    }
   }
 }
-.about-item__logo {
-  &--flower {
-    margin: 30px 5px 20px 7px;
-    fill: $light-green;
+
+
+@media ($tablet-widths) {
+
+  .about {
+    width: 100%;
+    padding: 50px;
   }
-  &--money {
-    margin: 30px 5px 20px 7px;
-    fill: $light-green;
+
+  .about-item {
+    margin-bottom: 0;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__logo {
+      display: inline-block;
+      width: 295px;
+      margin-bottom: 55px;
+      margin-right: 30px;
+    }
   }
-  &--heart {
-    margin: 30px 5px 20px 7px;
-    fill: $light-green;
-  }
-  &--roll {
-    margin: 30px 5px 20px 7px;
-    fill: $light-green;
-  }
-  &--rocket {
-    margin: 30px 5px 20px 7px;
-    fill: $light-green;
-  }
-  &--gift {
-    margin: 30px 5px 20px 7px;
-    fill: $light-green;
+}
+
+
+@media ($desktop-widths) {
+
+  .about {
+    width: auto;
+    margin: 0 0 0 225px;
+    padding-bottom: 35px;
   }
 }

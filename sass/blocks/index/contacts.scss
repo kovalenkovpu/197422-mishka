@@ -1,22 +1,26 @@
 .contacts {
   display: block;
   margin: 45px 30px 35px 30px;
+
   &__title {
     font-family: "OpenSansBold";
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 30px;
   }
+
   &__info {
     font-family: "OpenSansRegular";
     font-size: 15px;
     line-height: 30px;
     color: $gray;
+
     & dt {
       display: block;
       float: left;
       padding-right: 1px;
     }
+
     & dd {
       display: block;
       padding-right: 40px;
@@ -25,5 +29,71 @@
   }
 }
 .contact-us {
-  max-width: 230px;
+  width: 230px;
+}
+
+
+@media ($tablet-widths) {
+
+  .contacts {
+    position: relative;
+    margin: 45px 50px 60px 50px;
+
+    &__title {
+      padding-top: 20px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__info {
+      @include clearfix();
+
+      & dd {
+      margin-bottom: 0;
+      }
+    }
+
+    &__info-mail,
+    &__info-address {
+      display: block;
+      width: 50%;
+      float: left;
+    }
+
+    &:after {
+      content: "ФЛАГ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-color: $light-green; //временно
+    }
+  }
+}
+
+
+@media ($desktop-widths) {
+  .contacts {
+    width: 400px;
+    float: left;
+    margin: 45px 0 60px 50px;
+    padding-left: 175px;
+
+    &__info-mail,
+    &__info-address {
+      width: 300px;
+      float: none;
+    }
+
+    &:after {
+      left: 60px;
+      top: 0;
+    }
+  }
+  .contact-us {
+    margin-left: 225px;
+    float: left;
+  }
 }

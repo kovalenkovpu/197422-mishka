@@ -18,7 +18,7 @@
       <nav class="main-menu main-menu--visible">
         <!-- логотип бургер -->
         <button class="main-menu__toggle"></button>
-        <ul class="main-menu-items">
+        <ul class="main-menu__list">
           <!-- элементы меню бургера -->
           <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
           <li class="main-menu-item"><a href="/knitwork.html" class="main-menu-item__title">Вязание на заказ</a></li>
@@ -36,32 +36,28 @@
 
       <!-- блок формы заказа-->
       <section class="order-wrapper">
-        <p class="order-form__title">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с     вами, чтобы уточнить детали.</p>
+        <p class="order-title">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с     вами, чтобы уточнить детали.</p>
         <form action="#" class="order-form" method="post">
+
           <!-- блок выбора типа -->
-          <fieldset class="order-type  fieldset-block">
+          <fieldset class="order-form__group  order-form__group--type-order">
             <legend class="order-form__intro">ТИП</legend>
-            <input type="radio" class="order-type__input" id="order-1" name="order-type" checked>
-            <label class="order-type__label" for="order-1">Аксессуар для интерьера</label>
-            <input type="radio" class="order-type__input" id="order-2" name="order-type">
-            <label class="order-type__label" for="order-2">Детская игрушка</label>
+            <label class="order-type__label"><input type="radio" class="order-type__input" name="order-type" checked><span class="order-type__input-icon"></span>Аксессуар для интерьера</label>
+            <label class="order-type__label"><input type="radio" class="order-type__input" name="order-type"><span class="order-type__input-icon"></span>Детская игрушка</label>
           </fieldset>
+
           <!-- блок выбора цвета -->
-          <fieldset class="order-color  fieldset-block">
+          <fieldset class="order-form__group order-form__group--color-order">
             <legend class="order-form__intro">ЦВЕТ</legend>
-            <input type="checkbox" class="order-color__check" id="order-color-1" checked><label class="order-color__label" for="order-color-1">Белый</label>
-            <input type="checkbox" class="order-color__check" id="order-color-2" checked><label class="order-color__label" for="order-color-2">Серый</label>
-            <input type="checkbox" class="order-color__check" id="order-color-3">
-            <label class="order-color__label" for="order-color-3">"Тиффани"</label>
-            <input type="checkbox" class="order-color__check" id="order-color-4">
-            <label class="order-color__label" for="order-color-4">Черный</label>
-            <input type="checkbox" class="order-color__check" id="order-color-5">
-            <label class="order-color__label" for="order-color-5">Розовый</label>
-            <input type="checkbox" class="order-color__check" id="order-color-6">
-            <label class="order-color__label" for="order-color-6">Оранжевый</label>
+            <label class="order-color__label" for="order-color-1"><input type="checkbox" class="order-color__check" id="order-color-1" checked><span class="order-color__input-icon"></span>Белый</label>
+            <label class="order-color__label" for="order-color-2"><input type="checkbox" class="order-color__check" id="order-color-2" checked><span class="order-color__input-icon"></span>Серый</label>
+            <label class="order-color__label" for="order-color-3"><input type="checkbox" class="order-color__check" id="order-color-3"><span class="order-color__input-icon"></span>"Тиффани"</label>
+            <label class="order-color__label" for="order-color-4"><input type="checkbox" class="order-color__check" id="order-color-4"><span class="order-color__input-icon"></span>Черный</label>
+            <label class="order-color__label" for="order-color-5"><input type="checkbox" class="order-color__check" id="order-color-5"><span class="order-color__input-icon"></span>Розовый</label>
+            <label class="order-color__label" for="order-color-6"><input type="checkbox" class="order-color__check" id="order-color-6"><span class="order-color__input-icon"></span>Оранжевый</label>
           </fieldset>
           <!-- блок ввода ФИО данных -->
-          <fieldset class="order-personal  fieldset-block">
+          <fieldset class="order-form__group order-form__group--personal-order">
             <legend class="order-form__intro">ФИО</legend>
             <label class="order-personal-label" for="name">Имя:</label>
             <input class="order-personal-input" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
@@ -71,19 +67,19 @@
             <input class="order-personal-input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
           </fieldset>
           <!-- блок ввода телефона -->
-          <fieldset class="order-phone  fieldset-block">
+          <fieldset class="order-form__group order-form__group--phone-order">
             <legend class="order-form__intro">ТЕЛ</legend>
             <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
-            <span class="order-phone__logo"></span>
+            <span class="phone-order__logo"></span>
           </fieldset>
           <!-- блок ввода email -->
-          <fieldset class="order-mail  fieldset-block">
+          <fieldset class="order-form__group order-form__group--mail-order">
             <legend class="order-form__intro">E-MAIL</legend>
             <input type="email" id="email" name="email" placeholder="Ваш Email*" required>
-            <span class="order-mail__logo"></span>
+            <span class="mail-order__logo"></span>
           </fieldset>
           <!-- блок ввода дополнительных данных -->
-          <fieldset class="order-extra  fieldset-block">
+          <fieldset class="order-form__group order-form__group--extra-order">
             <legend class="order-form__intro">ДОП</legend>
             <textarea id="extra-info" name="extra-info" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>

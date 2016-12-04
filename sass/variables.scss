@@ -1,5 +1,5 @@
-$tablet-widths: 768px;
-$desktop-widths: 1200px;
+$tablet-widths: "min-width: 768px";
+$desktop-widths: "min-width: 1150px";
 
 $bg-color: #ffffff;
 $cute-stuff-bg: #f9f9f9;
@@ -12,3 +12,5 @@ $footer-bg-color: #f1f1f1;
 $footer-line: #e5e5e5;
 $gray: #444444;
 $black: #000000;
+
+$time: 0.2s;

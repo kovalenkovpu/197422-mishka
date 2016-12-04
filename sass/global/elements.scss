@@ -8,6 +8,7 @@
   line-height: 24px;
   color: $bg-color;
 }
+
 .ghost-btn {
   display: block;
   margin: 0 auto;
@@ -19,15 +20,18 @@
   text-transform: uppercase;
   color: $gray;
   box-shadow: inset 0 0 0 2px $gray;
+
   &:hover {
     background-color: $gray;
     color: $bg-color;
   }
+
   &:active {
     color: rgba(256, 256, 256, 0.3);
     background-color: $gray;
   }
 }
+
 .arrow-btn {
     display: block;
     width: 50%;

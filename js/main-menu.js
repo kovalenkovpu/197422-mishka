@@ -2,7 +2,7 @@
 
 var toggle = document.getElementsByClassName("main-menu__toggle")[0];
 var main_menu = document.getElementsByClassName("main-menu main-menu--visible")[0];
-var menu_items = document.getElementsByClassName("main-menu-items")[0];
+//var menu_items = document.getElementsByClassName("main-menu-items")[0];
 var menu_item = document.getElementsByClassName("main-menu-item__title");
 
 toggle.onclick = function() {
