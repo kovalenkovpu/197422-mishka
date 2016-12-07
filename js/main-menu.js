@@ -1,29 +1,21 @@
 "use strict";
 
+var toggle_wrapper = document.getElementsByClassName("main-menu__toggle-wrapper")[0];
 var toggle = document.getElementsByClassName("main-menu__toggle")[0];
-var main_menu = document.getElementsByClassName("main-menu main-menu--visible")[0];
-//var menu_items = document.getElementsByClassName("main-menu-items")[0];
-var menu_item = document.getElementsByClassName("main-menu-item__title");
+var main_menu = document.getElementsByClassName("main-menu")[0];
+var menu_list = document.getElementsByClassName("main-menu__list")[0];
 
-toggle.onclick = function() {
-  if (main_menu.className == "main-menu main-menu--visible") {
-    for (let i = 0; i < (menu_item.length); i++) {
-      menu_item[i].style.display = "none";
-    };
 
-    main_menu.style.width = "100%";
-    toggle.style.background = "url(../img/icon-menu-open.svg) no-repeat top right";
-    main_menu.classList.remove("main-menu--visible");
-    main_menu.classList.add("main-menu--invisible");
-
-  } else if (main_menu.className == "main-menu main-menu--invisible") {
-    for (let j = 0; j < (menu_item.length); j++) {
-      menu_item[j].style.display = "block";
-    };
-
-    main_menu.style.width = "100%";
-    toggle.style.background = "url(../img/icon-menu-close.svg) no-repeat top right";
-    main_menu.classList.remove("main-menu--invisible");
-    main_menu.classList.add("main-menu--visible");
+toggle_wrapper.onclick = function() {
+  if (menu_list.className == "main-menu__list main-menu__list--visible") {
+    menu_list.classList.remove("main-menu__list--visible");
+    menu_list.classList.add("main-menu__list--invisible");
+    toggle.classList.remove("main-menu__toggle--crossed");
+    main_menu.style.height = "0";
+  } else if (menu_list.className == "main-menu__list main-menu__list--invisible") {
+    menu_list.classList.remove("main-menu__list--invisible");
+    menu_list.classList.add("main-menu__list--visible");
+    toggle.classList.add("main-menu__toggle--crossed");
+    main_menu.style.height = "320px";
   }
-};
+}
