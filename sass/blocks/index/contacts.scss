@@ -113,7 +113,6 @@
 
 @media ($desktop-widths) {
   .contacts {
-    width: 400px;
     float: left;
     margin: 125px 0 60px 50px;
     padding-left: 175px;
@@ -142,6 +141,12 @@
 
   .contacts__info-mail {
     margin-bottom: 30px;
+  }
+
+  .contacts__info-mail-link {
+    &:after {
+      width: 205px;
+    }
   }
 
   .contact-us {
