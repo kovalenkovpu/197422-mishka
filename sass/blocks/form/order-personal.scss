@@ -27,8 +27,9 @@
 
 
 @media ($tablet-widths) {
-  .order-personal__group-wrapper {
-    margin: 52px 50px 0 217px;
+  .order-personal {
+    width: 100%;
+    padding: 52px 50px 0 217px;
   }
 
   .order-personal-label {
@@ -51,8 +52,7 @@
 
 
 @media ($desktop-widths) {
-  .order-personal__group-wrapper {
-    margin-left: 225px;
-    margin-right: 225px;
+  .order-personal {
+    padding: 50px 225px 50px 225px;
   }
 }

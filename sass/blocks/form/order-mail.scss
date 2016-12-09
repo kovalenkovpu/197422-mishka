@@ -27,14 +27,10 @@
 }
 
 @media ($tablet-widths) {
-  .order-mail__group-wrapper {
+  .order-mail {
     position: relative;
-    margin: 50px 50px 50px 217px;
-  }
-
-  .order-mail__group-wrapper {
-    margin-top: 13px;
-    margin-bottom: 50px;
+    width: 100%;
+    padding: 52px 50px 50px 217px;
   }
 
   .order-form__group--mail-order input {
@@ -43,14 +39,18 @@
   }
 
   .mail-order__logo {
-    right: 22px;
+    right: 55px;
+    bottom: 60px;
   }
 }
 
 
 @media ($desktop-widths) {
-  .order-mail__group-wrapper {
-    margin-left: 225px;
-    margin-right: 225px;
+  .order-mail {
+    padding: 50px 225px 50px 225px;
+  }
+
+  .mail-order__logo {
+    right: 230px;
   }
 }

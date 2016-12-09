@@ -68,14 +68,14 @@
 @media ($tablet-widths) {
   .contacts {
     position: relative;
-    margin: 152px 50px 60px 50px;
+    margin: 130px 0 60px 0;
 
     &:after {
       content: "ФЛАГ";
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 50px;
       width: 47px;
       height: 81px;
       background-color: $light-green; //временно
@@ -84,13 +84,14 @@
 
   .contacts__title {
     padding-top: 20px;
-    margin-bottom: 60px;
+    margin: 0 50px 60px 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .contacts__info {
     @include clearfix();
+    margin: 0 50px 60px 50px;
   }
 
   .contacts__info dd {
@@ -113,34 +114,42 @@
 
 @media ($desktop-widths) {
   .contacts {
-    float: left;
-    margin: 125px 0 60px 50px;
+    margin: 0 50px 60px 50px;
     padding-left: 175px;
 
     &:after {
       left: 60px;
-      top: -10px;
+      top: 60px;
     }
   }
 
   .contacts__title {
+    width: 320px;
     font-size: 53px;
     line-height: 57px;
-    padding-top: 5px;
+    margin-bottom: 58px;
+    margin-left: 0;
+    padding-top: 70px;
   }
 
   .contacts__info {
+    width: 320px;
     font-size: 17px;
+    margin-bottom: 75px;
+    margin-left: 0;
   }
 
   .contacts__info-mail,
   .contacts__info-address {
     width: 300px;
-    float: none;
   }
 
   .contacts__info-mail {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+  }
+
+  .contacts__info dd {
+    padding-right: 0;
   }
 
   .contacts__info-mail-link {
@@ -150,7 +159,6 @@
   }
 
   .contact-us {
-    margin-left: 225px;
-    float: left;
+    margin-left: 0;
   }
 }

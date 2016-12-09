@@ -13,11 +13,6 @@
   min-width: 260px;
 }
 
-.main-wrapper {
-  @include container();
-  display: block;
-}
-
 .page-header {
   position: relative;
   display: flex;
@@ -64,10 +59,6 @@
   .page-header {
     position: relative;
     box-shadow: none;
-  }
-
-  .main-wrapper {
-    @include clearfix();
   }
 
   .order-wrapper {

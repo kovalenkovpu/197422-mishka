@@ -12,7 +12,7 @@
 }
 
 @media ($tablet-widths) {
-  .order-form__submit-wrapper {
+  .order-form-submit {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@
 
 
 @media ($desktop-widths) {
-  .order-form__submit-wrapper {
+  .order-form-submit {
     margin-left: 225px;
     margin-right: 225px;
   }

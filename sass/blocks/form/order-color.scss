@@ -48,7 +48,7 @@
 
 
 @media ($tablet-widths) {
-  .order-color__group-wrapper {
+  .order-color {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -79,7 +79,7 @@
 
 
 @media ($desktop-widths) {
-  .order-color__group-wrapper {
+  .order-color {
     flex-direction: row;
     margin-left: 225px;
     align-content: space-around;
@@ -87,6 +87,5 @@
 
   .order-color__label {
     width: 260px;
-//    margin-bottom: 0;
   }
 }

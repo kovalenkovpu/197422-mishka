@@ -53,7 +53,7 @@
 
 
 @media ($tablet-widths) {
-  .order-type__group-wrapper {
+  .order-type {
     margin: 36px 50px 50px 217px;
   }
 
@@ -79,7 +79,7 @@
 
 
 @media ($desktop-widths) {
-  .order-type__group-wrapper {
+  .order-type {
     margin-left: 225px;
     margin-top: 33px;
   }
