@@ -112,10 +112,9 @@
 
   .about-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 0;
-    max-height: 455px;
   }
 
   .about-item__title {
@@ -127,6 +126,25 @@
     width: 295px;
     margin-bottom: 35px;
     margin-right: 30px;
+
+    &--flower {
+      order: 0;
+    }
+    &--money {
+      order: 2;
+    }
+    &--heart {
+      order: 4;
+    }
+    &--roll {
+      order: 1;
+    }
+    &--rocket {
+      order: 3;
+    }
+    &--gift {
+      order: 5;
+    }
   }
 }
 
@@ -135,12 +153,17 @@
 
   .about {
     width: auto;
-    margin: 0 0 0 175px;
+    margin-left: 50px;
+    padding-left: 175px;
     padding-bottom: 35px;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-item__logo {
+    margin-right: 60px;
   }
 }
