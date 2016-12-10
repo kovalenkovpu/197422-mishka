@@ -9,83 +9,92 @@
 .social {
   height: 80px;
   box-shadow: inset 0 -1px 0 0 $footer-line;
+}
 
-  &__inst,
-  &__fb,
-  &__twitter {
-    height: 40px;
-    width: 70px;
-    margin: 20px 0;
-    float: left;
+.social__inst,
+.social__fb,
+.social__twitter {
+  height: 40px;
+  width: 60px;
+  margin: 20px 0;
+  float: left;
+}
+
+.social__inst {
+  margin-left: 25px;
+  background: url("../img/icon-insta.svg") no-repeat center;
+
+  &:hover {
+    fill: $dark-green;
   }
 
-  &__inst {
-    margin-left: 15px;
-    background: url("../img/icon-insta.svg") no-repeat center;
+  &:active {
+    opacity: 0.3;
+  }
+}
 
-    &:hover {
-      fill: $dark-green;
-    }
+.social__fb {
+  background: url("../img/icon-fb.svg") no-repeat center;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:hover {
+    fill: $dark-green;
   }
 
-  &__fb {
-    background: url("../img/icon-fb.svg") no-repeat center;
+  &:active {
+    opacity: 0.3;
+  }
+}
 
-    &:hover {
-      fill: $dark-green;
-    }
+.social__twitter {
+  background: url("../img/icon-twitter.svg") no-repeat center;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:hover {
+    fill: $dark-green;
   }
 
-  &__twitter {
-    background: url("../img/icon-twitter.svg") no-repeat center;
-
-    &:hover {
-      fill: $dark-green;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .developed {
-  &__title,
-  &__logo {
+  .developed__title,
+  .developed__logo {
     display: inline-block;
     vertical-align: middle;
   }
+}
 
-  &__title {
-    padding-right: 30px;
-    font-family: "OpenSansBold";
-    font-size: 19px;
+.developed__title {
+  padding-right: 30px;
+}
 
-    &:visited {
-      opacity: 0.3;
-    }
+.developed__title a {
+  text-decoration: none;
+  color: $black;
+  font-family: "OpenSansBold";
+  font-size: 19px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
   }
 
-  &__logo {
-    width: 27px;
-    height: 30px;
-    margin: 25px 0;
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
 
-    &:hover {
-      fill: $dark-green;
-    }
+.developed__logo {
+  width: 27px;
+  height: 30px;
+  margin: 25px 0;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:hover {
+    fill: $dark-green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -93,39 +102,41 @@
 @media ($tablet-widths) {
 
   .developed {
-    width: 230px;
+    width: 220px;
     display: block;
     float: right;
     box-shadow: none;
+  }
 
-    &__logo {
-      margin: 55px 0;
-    }
+  .developed__logo {
+    margin: 55px 0;
   }
 
   .social {
-    width: 230px;
+    width: 220px;
     height: 140px;
     display: block;
     float: left;
     box-shadow: none;
-
-    &__inst,
-    &__fb,
-    &__twitter {
-      margin-top: 50px;
-    }
   }
 
-  .page-footer:before {
-    content: "";
-    display: block;
-    width: 230px;
-    height: 140px;
-    margin: 0 auto;
-    background: url(../img/logo-mobile.svg) no-repeat center;
-    background-size: 102px 34px;
-    float: left;
+  .social__inst,
+  .social__fb,
+  .social__twitter {
+    margin-top: 50px;
+  }
+
+  .page-footer {
+    &:before {
+      content: "";
+      display: block;
+      width: 102px;
+      height: 140px;
+      margin-right: 118px;
+      background: url(../img/logo-mobile.svg) no-repeat center;
+      background-size: 102px 34px;
+      float: left;
+    }
   }
 }
 

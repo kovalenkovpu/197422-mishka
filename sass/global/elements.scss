@@ -1,7 +1,7 @@
 .green-btn {
   display: block;
   position: relative;
-  padding: 30px;
+  padding: 26px 30px 30px 30px;
   text-decoration: none;
   font-family: "OpenSansBold";
   font-size: 19px;
@@ -33,9 +33,9 @@
 }
 
 .arrow-btn {
-    display: block;
-    width: 50%;
-    height: 52px;
-    border: none;
-    box-shadow: inset 0 0 0 1px $box-shadow;
-  }
+  display: block;
+  width: 50%;
+  height: 52px;
+  border: none;
+  box-shadow: inset 0 0 0 1px $box-shadow;
+}

@@ -1,0 +1,56 @@
+.order-form__group--phone-order input {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid $black;
+  font-family: "OpenSansRegular";
+  font-size: 17px;
+  line-height: 18px;
+
+  &:hover {
+    border-bottom: 2px solid $light-green;
+  }
+
+  &:active {
+    border-bottom: 2px solid $light-green;
+  }
+}
+
+.phone-order__logo {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 8px;
+  bottom: 13px;
+  background: url("../img/icon-phone.svg") no-repeat center;
+  opacity: 0.2;
+}
+
+@media ($tablet-widths) {
+  .order-phone {
+    position: relative;
+    width: 100%;
+    padding: 52px 50px 0 217px;
+  }
+
+  .order-form__group--phone-order input {
+    background-color: $footer-bg-color;
+    font-size: 19px;
+  }
+
+  .phone-order__logo {
+    right: 57px;
+  }
+}
+
+
+@media ($desktop-widths) {
+  .order-phone {
+    padding: 50px 225px 50px 225px;
+  }
+
+  .phone-order__logo {
+    bottom: 60px;
+    right: 233px;
+  }
+}

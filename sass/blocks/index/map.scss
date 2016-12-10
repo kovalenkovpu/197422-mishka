@@ -1,27 +1,29 @@
-.map {
+.contacts__map {
   height: 457px;
-  margin: 0 0 40px 0;
+  margin: 0 -30px 40px -30px;
   padding: 0;
   background: url("../img/map-mobile@1x.jpg") no-repeat center;
 }
 
-@media ($tablet-widths) {
 
-  .map {
+@media ($tablet-widths) {
+  .contacts__map {
     width: 100%;
-    margin-bottom: 55px;
+    margin: 0 0 55px 0;
     border: 1px solid brown; //временно
   }
 }
 
 
 @media ($desktop-widths) {
-  .map {
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 0;
     width: 525px;
-    float: right;
     background-image: none;
     border: 1px solid brown; //временно
     background-size: 525px 457px;
-    margin-right: 50px;
   }
 }

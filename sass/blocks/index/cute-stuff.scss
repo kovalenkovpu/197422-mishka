@@ -3,16 +3,16 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -10%;
+}
 
-  &__title {
-    width: 245px;
-    margin: 0 auto;
-    padding: 75px 0 120px 0;
-    font-family: "OpenSansBold";
-    text-align: center;
-    font-size: 27px;
-    line-height: 30px;
-  }
+.cute-stuff__title {
+  width: 245px;
+  margin: 0 auto;
+  padding: 75px 0 116px 0;
+  font-family: "OpenSansBold";
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
 }
 
 .interior-btn {
@@ -40,6 +40,7 @@
 
   &:hover {
     background: $dark-green-hover;
+
     &::after {
       opacity: 0.7;
     }
@@ -47,6 +48,7 @@
 
   &:active {
     color: rgba(256, 256, 256, 0.3);
+
     &::after {
       opacity: 0.3;
     }
@@ -54,6 +56,7 @@
 }
 .interior-btn,
 .toys-btn {
+
   &::after {
     content: "";
     display: block;
@@ -61,14 +64,14 @@
     opacity: 0.5;
   }
 }
-.interior-btn::after {
+.interior-btn:after {
   width: 41px;
   height: 62px;
   right: 36px;
   top: 23px;
   background: url("../img/icon-interior.svg") no-repeat;
 }
-.toys-btn::after {
+.toys-btn:after {
   width: 60px;
   height: 60px;
   right: 26px;
@@ -98,14 +101,24 @@
     @include clearfix();
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 668px;
+    margin: 0 50px;
   }
 
   .interior-btn,
   .toys-btn {
     width: 50%;
     height: 120px;
+    padding-top: 35px;
+    padding-bottom: 25px;
     float: left;
+  }
+
+  .interior-btn:after {
+    top: 26px;
+  }
+  .toys-btn:after {
+    top: 26px;
   }
 
   .toys-btn {
@@ -130,10 +143,8 @@
   }
 
   .cute-stuff__buttons {
-    @include clearfix();
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    width: 1050px;
+    margin: 0 50px;
   }
 
   .interior-btn,

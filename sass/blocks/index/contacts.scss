@@ -1,99 +1,164 @@
 .contacts {
   display: block;
   margin: 45px 30px 35px 30px;
+}
 
-  &__title {
-    font-family: "OpenSansBold";
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 30px;
+.contacts__title {
+  font-family: "OpenSansBold";
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.contacts__info {
+  font-family: "OpenSansRegular";
+  font-size: 15px;
+  line-height: 30px;
+  color: $gray;
+}
+
+.contacts__info dt {
+  display: block;
+  float: left;
+  padding-right: 1px;
+}
+
+.contacts__info dd {
+  display: block;
+  padding-right: 40px;
+  margin: 0 0 40px 80px;
+}
+
+.contacts__info-mail-link {
+  &:after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 1px;
+    background-color: $light-green;
+  }
+}
+
+.contacts__info-mail-link {
+  text-decoration: none;
+  color: $gray;
+
+  &:hover {
+    color:$dark-green-hover;
+
+    &:after {
+      background-color: $dark-green-hover;
+    }
   }
 
-  &__info {
-    font-family: "OpenSansRegular";
-    font-size: 15px;
-    line-height: 30px;
-    color: $gray;
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
 
-    & dt {
-      display: block;
-      float: left;
-      padding-right: 1px;
-    }
-
-    & dd {
-      display: block;
-      padding-right: 40px;
-      margin: 0 0 40px 80px;
+    &:after {
+      opacity: 0.1;
     }
   }
 }
+
 .contact-us {
   width: 230px;
 }
 
 
 @media ($tablet-widths) {
-
   .contacts {
     position: relative;
-    margin: 45px 50px 60px 50px;
-
-    &__title {
-      padding-top: 20px;
-      font-size: 43px;
-      line-height: 50px;
-    }
-
-    &__info {
-      @include clearfix();
-
-      & dd {
-      margin-bottom: 0;
-      }
-    }
-
-    &__info-mail,
-    &__info-address {
-      display: block;
-      width: 50%;
-      float: left;
-    }
+    margin: 130px 0 60px 0;
 
     &:after {
       content: "ФЛАГ";
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 50px;
       width: 47px;
       height: 81px;
       background-color: $light-green; //временно
     }
+  }
+
+  .contacts__title {
+    padding-top: 20px;
+    margin: 0 50px 60px 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__info {
+    @include clearfix();
+    margin: 0 50px 60px 50px;
+  }
+
+  .contacts__info dd {
+    margin-bottom: 0;
+  }
+
+  .contacts__info-mail,
+  .contacts__info-address {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+
+  .contact-us {
+    line-height: 16px;
+    padding: 17px 0;
   }
 }
 
 
 @media ($desktop-widths) {
   .contacts {
-    width: 400px;
-    float: left;
-    margin: 45px 0 60px 50px;
+    margin: 0 50px 60px 50px;
     padding-left: 175px;
-
-    &__info-mail,
-    &__info-address {
-      width: 300px;
-      float: none;
-    }
 
     &:after {
       left: 60px;
-      top: 0;
+      top: 60px;
     }
   }
+
+  .contacts__title {
+    width: 320px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 58px;
+    margin-left: 0;
+    padding-top: 70px;
+  }
+
+  .contacts__info {
+    width: 320px;
+    font-size: 17px;
+    margin-bottom: 75px;
+    margin-left: 0;
+  }
+
+  .contacts__info-mail,
+  .contacts__info-address {
+    width: 300px;
+  }
+
+  .contacts__info-mail {
+    margin-bottom: 27px;
+  }
+
+  .contacts__info dd {
+    padding-right: 0;
+  }
+
+  .contacts__info-mail-link {
+    &:after {
+      width: 205px;
+    }
+  }
+
   .contact-us {
-    margin-left: 225px;
-    float: left;
+    margin-left: 0;
   }
 }

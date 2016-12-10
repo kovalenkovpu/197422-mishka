@@ -1,10 +1,15 @@
 .page-header__logo {
   display: block;
-  height: 80px;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  margin: 0 0 0 -43px;
+  height: 35px;
   width: 86px;
-  margin: 0 auto;
   background: url(../img/logo-mobile.svg) no-repeat center;
+}
 
+.page-header__logo[href] {
   &:hover {
     opacity: 0.6;
   }
@@ -16,17 +21,16 @@
 
 
 @media ($tablet-widths) {
-
   .page-header__logo {
-    float: left;
+    left: 50px;
+    margin: 0;
   }
 }
 
 
 @media ($desktop-widths) {
-
   .page-header__logo {
-    position: absolute;
-    right: 50%;
+    left: 50%;
+    margin-left: -43px;
   }
 }
