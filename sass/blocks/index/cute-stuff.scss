@@ -124,6 +124,18 @@
   .toys-btn {
     float: right;
   }
+
+  .cute-stuff__wave {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    width: 100%;
+    background-image: url("../img/wave1.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+  }
 }
 
 @media ($desktop-widths) {
@@ -156,5 +168,10 @@
 
   .toys-btn {
     float: right;
+  }
+
+  .cute-stuff__wave {
+    height: 34px;
+    background-image: url("../img/wave2.png");
   }
 }

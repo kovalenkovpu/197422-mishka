@@ -30,7 +30,7 @@
   .order-mail {
     position: relative;
     width: 100%;
-    padding: 52px 50px 50px 217px;
+    padding: 22px 50px 50px 217px;
   }
 
   .order-form__group--mail-order input {
@@ -47,7 +47,7 @@
 
 @media ($desktop-widths) {
   .order-mail {
-    padding: 50px 225px 50px 225px;
+    padding: 0 225px 50px 225px;
   }
 
   .mail-order__logo {

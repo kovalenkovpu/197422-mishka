@@ -7,8 +7,8 @@
 
 .catalog__title {
   display: block;
-  padding-bottom: 70px;
-  padding-top: 70px;
+  padding-bottom: 74px;
+  padding-top: 72px;
   text-align: center;
   font-family: "OpenSansBold";
   font-size: 27px;
@@ -16,11 +16,29 @@
   background-color: $footer-bg-color;
 }
 
+@media ($tablet-widths) {
+  .catalog__title {
+    position: relative;
+    padding-top: 99px;
+    padding-bottom: 78px;
+    margin-bottom: 24px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
 
 @media ($desktop-widths) {
   .catalog {
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px;
+    padding: 100px 50px 50px 50px;
+  }
+
+  .catalog__title {
+    padding-bottom: 100px;
+    margin-bottom: 28px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

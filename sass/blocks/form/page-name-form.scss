@@ -15,10 +15,13 @@
 
 
 @media ($tablet-widths) {
-
+  .page-name {
+    position: relative;
+    width: 100%;
+  }
   .page-name__title {
     width: 768px;
-    padding: 100px 0 78px 0;
+    padding: 98px 0 78px 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -28,7 +31,7 @@
 @media ($desktop-widths) {
   .page-name__title {
     width: 1150px;
-    padding: 98px 0 95px 0;
+    padding: 102px 0 95px 0;
     font-size: 53px;
     line-height: 57px;
   }

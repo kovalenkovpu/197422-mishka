@@ -1,6 +1,6 @@
 .about {
   display: block;
-  padding: 30px 30px 26px 30px;
+  padding: 27px 30px 26px 30px;
 }
 
 .about__title {
@@ -98,10 +98,9 @@
 
 
 @media ($tablet-widths) {
-
   .about {
     width: 100%;
-    padding: 42px 50px 50px 50px;
+    padding: 42px 50px 45px 50px;
   }
 
   .about__title {
@@ -126,6 +125,7 @@
     width: 295px;
     margin-bottom: 35px;
     margin-right: 30px;
+    padding-top: 25px;
 
     &--flower {
       order: 0;
@@ -150,17 +150,16 @@
 
 
 @media ($desktop-widths) {
-
   .about {
     width: auto;
     margin-left: 50px;
-    padding-left: 175px;
-    padding-bottom: 35px;
+    padding: 64px 50px 50px 175px;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 17px;
   }
 
   .about-item__logo {
