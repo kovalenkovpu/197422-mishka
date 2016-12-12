@@ -286,6 +286,10 @@
     font-size: 17px;
   }
 
+  .extra-menu__list {
+    justify-content: flex-start;
+  }
+
   .extra-menu-item {
     display: block;
     position: static;
