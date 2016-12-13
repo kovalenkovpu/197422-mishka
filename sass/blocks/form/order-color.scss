@@ -1,3 +1,9 @@
+.order-color {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .order-color__label {
   position: relative;
   display: block;
@@ -7,6 +13,15 @@
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 18px;
+  cursor: pointer;
+
+  &:hover .order-color__input-icon {
+    color: $light-green;
+  }
+
+  &:active .order-color__input-icon {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .order-color__check {
@@ -23,15 +38,6 @@
   height: 39px;
   box-shadow: inset 0 0 0 2px;
   color: $gray;
-  cursor: pointer;
-
-  &:hover {
-    color: $light-green;
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
 }
 
 .order-color__check:checked + .order-color__input-icon:before {
@@ -50,9 +56,6 @@
 
 @media ($tablet-widths) {
   .order-color {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin: 50px 50px 30px 217px;
   }
 

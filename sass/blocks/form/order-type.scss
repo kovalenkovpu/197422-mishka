@@ -1,3 +1,9 @@
+.order-type {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .order-type__input {
   display: none;
 }
@@ -9,6 +15,15 @@
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 18px;
+  cursor: pointer;
+
+  &:hover .order-type__input-icon {
+    color: $light-green;
+  }
+
+  &:active .order-type__input-icon {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .order-type__input-icon {
@@ -22,15 +37,6 @@
   height: 40px;
   box-shadow: inset 0 0 0 2px;
   color: $gray;
-  cursor: pointer;
-
-  &:hover {
-    color: $light-green;
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
 
   &:before {
     content: "";
@@ -55,7 +61,7 @@
 
 @media ($tablet-widths) {
   .order-type {
-    margin: 36px 50px 50px 217px;
+    margin: 36px 50px 30px 217px;
   }
 
   .order-type__label {

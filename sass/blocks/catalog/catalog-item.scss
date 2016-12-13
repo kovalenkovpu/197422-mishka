@@ -13,6 +13,11 @@
   box-shadow: 0 3px 5px 0 $box-shadow;
 }
 
+.catalog-item__details {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-item__img {
   display: block;
   width: 260px;
@@ -109,11 +114,6 @@
     height: 334px;
     width: 334px;
     border: 1px solid brown;
-  }
-
-  .catalog-item__details {
-    display: flex;
-    flex-direction: column;
   }
 
   .catalog-item__name,

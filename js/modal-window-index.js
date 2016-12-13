@@ -16,17 +16,11 @@ function hideModal() {
   pageWrapper.classList.remove("page-opacified");
 }
 
-bestItemBtn.addEventListener('click', function(){
-  showModal();
-});
+bestItemBtn.addEventListener('click', showModal);
 
-modalClose.addEventListener('click', function(){
-  hideModal();
-});
+modalClose.addEventListener('click', hideModal);
 
-modalCloseIcon.addEventListener('click', function(){
-  hideModal();
-});
+modalCloseIcon.addEventListener('click', hideModal);
 
 document.addEventListener("keydown", checkKeyPressed, false);
 

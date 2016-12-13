@@ -1,3 +1,9 @@
+.order-phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .order-form__group--mail-order input {
   width: 100%;
   height: 55px;
@@ -25,6 +31,7 @@
   background: url("../img/icon-mail.svg") no-repeat center;
   opacity: 0.2;
 }
+
 
 @media ($tablet-widths) {
   .order-mail {
