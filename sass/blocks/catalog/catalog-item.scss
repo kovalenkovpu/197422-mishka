@@ -13,10 +13,15 @@
   box-shadow: 0 3px 5px 0 $box-shadow;
 }
 
+.catalog-item__details {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-item__img {
   display: block;
   width: 260px;
-  height: 195px;
+  height: 196px;
   background-color: $bg-color;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,7 +40,7 @@
 }
 
 .catalog-item__name {
-  margin: 30px 30px 0 30px;
+  margin: 23px 30px 0 30px;
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 24px;
@@ -57,7 +62,7 @@
 
 .catalog-item__description {
   margin: 0 30px 0 30px;
-  padding: 10px 0 20px 0;
+  padding: 10px 0 17px 0;
   font-family: "OpenSansRegular";
   font-size: 13px;
   line-height: 30px;
@@ -65,7 +70,7 @@
 
 .catalog-item__price {
   display: inline-block;
-  padding: 22px 0 26px 0;
+  padding: 22px 0 27px 0;
   font-family: "OpenSansBold";
   font-size: 15px;
   line-height: 24px;
@@ -102,7 +107,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 55px 50px 0 50px;
+    margin: 54px 50px 0 50px;
   }
 
   .catalog-item__img {
@@ -111,17 +116,23 @@
     border: 1px solid brown;
   }
 
-  .catalog-item__details {
-    display: flex;
-    flex-direction: column;
-  }
-
   .catalog-item__name,
   .catalog-item__description {
     width: 268px;
     margin-left: 33px;
     margin-right: 33px;
     max-height: 200px;
+  }
+  .catalog-item__name {
+    font-size: 20px;
+  }
+
+  .catalog-item__price {
+    font-size: 17px;
+  }
+
+  .catalog-item__description {
+    font-size: 15px;
   }
 
   .catalog-item__order-info {
@@ -132,9 +143,15 @@
 
 
 @media ($desktop-widths) {
+  .catalog {
+    margin-bottom: 0;
+  }
+
   .catalog-item {
     flex-direction: column;
     margin: 0;
+    margin-top: 50px;
+    height: auto;
   }
 
   .catalog-item__img {
@@ -146,6 +163,14 @@
   .catalog-item__name,
   .catalog-item__description {
     width: auto;
+  }
+
+  .catalog-item__name {
+    margin-top: 18px;
+  }
+
+  .catalog-item__description {
+    font-size: 17px;
   }
 
   .catalog-item__order-info {

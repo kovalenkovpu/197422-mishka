@@ -1,6 +1,11 @@
+.order-personal {
+  display: flex;
+  flex-direction: column;
+}
+
 .order-personal-label {
   display: block;
-  padding-top: 24px;
+  padding-top: 25px;
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 18px;
@@ -29,7 +34,7 @@
 @media ($tablet-widths) {
   .order-personal {
     width: 100%;
-    padding: 52px 50px 0 217px;
+    padding: 54px 50px 0 217px;
   }
 
   .order-personal-label {
@@ -53,6 +58,14 @@
 
 @media ($desktop-widths) {
   .order-personal {
-    padding: 50px 225px 50px 225px;
+    padding: 54px 225px 0 225px;
+  }
+
+  .order-personal-label {
+    padding-bottom: 27px;
+
+    &:last-child {
+      padding-bottom: 52px;
+    }
   }
 }

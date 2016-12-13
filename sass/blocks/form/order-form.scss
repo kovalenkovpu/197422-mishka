@@ -8,8 +8,6 @@
 }
 
 .order-form {
-  display: flex;
-  flex-direction: column;
   margin: 0 30px 30px 30px;
 }
 
@@ -20,11 +18,11 @@
   &--phone-order,
   &--mail-order {
     position: relative;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 
   &--color-order {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   &--personal-order {
@@ -68,7 +66,7 @@
     margin: 0 50px 0 50px;
     font-size: 17px;
     line-height: 30px;
-    padding-top: 35px;
+    padding-top: 30px;
     padding-left: 0;
   }
 
@@ -112,6 +110,7 @@
     position: absolute;
     left: 52px;
     top: 70px;
+    max-width: 150px;
 
     &:after {
       display: none;
@@ -134,7 +133,7 @@
     }
 
     &--mail {
-      top: 70px;
+      top: 43px;
     }
 
     &--extra {
@@ -148,7 +147,8 @@
   .order-title {
     width: 710px;
     margin-left: 225px;
-    padding-top: 30px;
+    margin-right: 0;
+    padding: 22px 30px 22px 0;
   }
 
   .order-form__intro {
@@ -164,6 +164,10 @@
 
     &--color {
       top: 68px;
+    }
+
+    &--mail {
+      top: 20px;
     }
   }
 }

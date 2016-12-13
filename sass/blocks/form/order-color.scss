@@ -1,12 +1,27 @@
+.order-color {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .order-color__label {
   position: relative;
   display: block;
+  width: 200px;
   margin-bottom: 22px;
   padding: 11px 10px 10px 65px;
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 18px;
-  width: 200px;
+  cursor: pointer;
+
+  &:hover .order-color__input-icon {
+    color: $light-green;
+  }
+
+  &:active .order-color__input-icon {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .order-color__check {
@@ -23,14 +38,6 @@
   height: 39px;
   box-shadow: inset 0 0 0 2px;
   color: $gray;
-
-  &:hover {
-    color: $light-green;
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
 }
 
 .order-color__check:checked + .order-color__input-icon:before {
@@ -49,10 +56,7 @@
 
 @media ($tablet-widths) {
   .order-color {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 50px 50px 26px 217px;
+    margin: 50px 50px 30px 217px;
   }
 
   .order-color__label {

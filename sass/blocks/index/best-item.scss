@@ -1,4 +1,5 @@
 .best-item {
+  position: relative;
   padding: 30px;
 }
 
@@ -78,10 +79,10 @@
 
 
 @media ($tablet-widths) {
-
   .best-item {
     position: relative;
     padding: 50px;
+    padding-bottom: 42px;
   }
 
   .best-item__title-wrapper {
@@ -155,7 +156,8 @@
   .best-item {
     position: relative;
     margin-left: 175px;
-    padding-top: 70px;
+    padding-top: 55px;
+    padding-bottom: 72px;
   }
 
   .best-item__title-wrapper {
@@ -165,7 +167,7 @@
   .best-item__title {
     display: block;
     position: absolute;
-    top: 62px;
+    top: 58px;
     left: -230px;
     font-size: 53px;
     line-height: 57px;
@@ -178,11 +180,11 @@
 
   .best-item__description {
     width: 295px;
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   .best-item__price-wrapper {
-    margin-top: 102px;
+    margin-top: 106px;
   }
 
   .best-item__img {

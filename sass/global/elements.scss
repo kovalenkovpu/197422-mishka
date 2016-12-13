@@ -20,6 +20,7 @@
   text-transform: uppercase;
   color: $gray;
   box-shadow: inset 0 0 0 2px $gray;
+  cursor: pointer;
 
   &:hover {
     background-color: $gray;
@@ -38,4 +39,29 @@
   height: 52px;
   border: none;
   box-shadow: inset 0 0 0 1px $box-shadow;
+}
+
+.wave-thick {
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-image: url("../img/wave-mobile.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+
+@media ($tablet-widths) {
+  .wave-thick {
+    height: 17px;
+    background-image: url("../img/wave-tablet.png");
+  }
+}
+
+
+@media ($desktop-widths) {
+  .wave-thick {
+    height: 23px;
+    background-image: url("../img/wave-desktop.png");
+  }
 }

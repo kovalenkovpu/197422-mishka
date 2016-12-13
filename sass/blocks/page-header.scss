@@ -1,10 +1,8 @@
 .page-header__logo {
-  display: block;
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  margin: 0 0 0 -43px;
-  height: 35px;
+  display: flex;
+  height: 80px;
+  align-self: center;
+
   width: 86px;
   background: url(../img/logo-mobile.svg) no-repeat center;
 }
@@ -22,6 +20,8 @@
 
 @media ($tablet-widths) {
   .page-header__logo {
+    position: absolute;
+    height: 88px;
     left: 50px;
     margin: 0;
   }
