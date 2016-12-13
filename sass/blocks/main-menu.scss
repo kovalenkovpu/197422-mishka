@@ -78,7 +78,7 @@
   font-size: 17px;
   line-height: 24px;
   color: $black;
-  padding-left: 75px;
+  padding-left: 80px;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -193,7 +193,7 @@
     height: 88px;
     margin: 0;
     padding: 38px 45px 0 30px;
-    margin-right: 90px;
+    margin-right: 0;
     box-shadow: 0 0 0 1px $box-shadow;
   }
 
@@ -212,6 +212,12 @@
     padding-left: 0;
   }
 
+
+  .main-menu-item:last-child .main-menu-item__title {
+    padding-left: 80px;
+  }
+
+
   .extra-menu__list {
     display: flex;
     height: 74px;
@@ -220,6 +226,8 @@
   }
 
   .extra-menu-item {
+    display: inline-flex;
+    align-items: center;
 
     &--new-release,
     &--sale {
@@ -227,15 +235,12 @@
     }
 
     &--shipping {
-      display: block;
       z-index: 5;
     }
   }
 
   .extra-menu-item__title {
-    display: flex;
-    align-items: center;
-    height: 74px;
+    height: 24px;
     text-decoration: none;
     font-family: "OpenSansBold";
     font-size: 15px;
@@ -271,7 +276,6 @@
 
     &:nth-child(3) {
       margin-left: auto;
-      margin-right: 30px;
     }
   }
 
@@ -291,7 +295,7 @@
   }
 
   .extra-menu-item {
-    display: block;
+    display: inline-flex;
     position: static;
     z-index: 5;
 

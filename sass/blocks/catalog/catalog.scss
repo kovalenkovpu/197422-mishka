@@ -1,5 +1,6 @@
 .catalog {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 30px;
@@ -32,7 +33,7 @@
   .catalog {
     flex-direction: row;
     justify-content: space-between;
-    padding: 100px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
   }
 
   .catalog__title {
