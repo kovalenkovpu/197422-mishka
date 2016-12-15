@@ -4,10 +4,11 @@
   flex-wrap: wrap;
 }
 
-.order-form__group--phone-order input {
+.order-phone input {
   width: 100%;
   height: 55px;
   border: none;
+  outline: none;
   border-bottom: 2px solid $black;
   font-family: "OpenSansRegular";
   font-size: 17px;
@@ -17,7 +18,7 @@
     border-bottom: 2px solid $light-green;
   }
 
-  &:active {
+  &:focus {
     border-bottom: 2px solid $light-green;
   }
 }
@@ -28,9 +29,17 @@
   height: 25px;
   right: 8px;
   bottom: 13px;
-  background: url("../img/icon-phone.svg") no-repeat center;
+}
+
+.phone-order__logo svg {
   opacity: 0.2;
 }
+
+.order-phone input:hover + .phone-order__logo svg {
+  opacity: 1;
+  fill: $light-green;
+}
+
 
 @media ($tablet-widths) {
   .order-phone {
@@ -39,7 +48,7 @@
     padding: 45px 50px 0 217px;
   }
 
-  .order-form__group--phone-order input {
+  .order-phone input {
     background-color: $footer-bg-color;
     font-size: 19px;
   }

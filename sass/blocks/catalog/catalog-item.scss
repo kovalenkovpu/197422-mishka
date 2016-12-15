@@ -22,21 +22,9 @@
   display: block;
   width: 260px;
   height: 196px;
-  background-color: $bg-color;
+  background-color: $footer-bg-color;
   background-repeat: no-repeat;
   background-position: center;
-
-  &--rabbit {
-    background-image: url("../img/photo-1-mobile@1x.jpg");
-  }
-
-  &--cart {
-    background-image: url("../img/photo-2-mobile@1x.jpg");
-  }
-
-  &--toy-cart {
-    background-image: url("../img/photo-3-mobile@1x.jpg");
-  }
 }
 
 .catalog-item__name {
@@ -80,16 +68,24 @@
   display: inline-block;
   float: right;
   border: none;
-  width: 90px; //увеличена ширина и высота блока
-  height: 72px;//для удобства покупки
+  outline: none;
   cursor: pointer;
   vertical-align: middle;
   text-align: right;
+  margin-top: 1px;
+  padding: 23px 0 20px 10px;
   background-color: $bg-color;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: right;
   opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: $light-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: $light-green;
+  }
 }
 
 .catalog-item:last-child {
@@ -113,7 +109,6 @@
   .catalog-item__img {
     height: 334px;
     width: 334px;
-    border: 1px solid brown;
   }
 
   .catalog-item__name,

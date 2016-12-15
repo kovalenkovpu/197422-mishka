@@ -66,11 +66,16 @@
     position: relative;
     height: 457px;
     background-image: url("../img/review.jpg");
-    background-size: 350px 457px;
+//    background-size: 350px 457px;
+    background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
     margin: 0 50px 58px 0;
     padding: 79px 0 0 50px;
+
+    @media #{$retina} {
+      background-image: url("../img/review@1x.jpg");
+    }
   }
 
   .feedback__title {
@@ -118,6 +123,10 @@
     padding-top: 76px;
     margin-left: 50px;
     margin-bottom: 66px;
+
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .feedback__title {

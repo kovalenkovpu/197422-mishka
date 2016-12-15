@@ -71,14 +71,14 @@
     margin: 58px 0 60px 0;
 
     &:after {
-      content: "ФЛАГ";
+      content: "";
       display: block;
       position: absolute;
       top: 0;
       right: 50px;
       width: 47px;
       height: 81px;
-      background-color: $light-green; //временно
+      background: url("../img/icon-flag.svg") no-repeat center;
     }
   }
 
