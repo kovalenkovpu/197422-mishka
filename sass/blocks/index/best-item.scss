@@ -61,7 +61,7 @@
   width: 260px;
   height: 315px;
   margin-bottom: 30px;
-  background: url("../img/triple-set-mobile@1x.jpg") no-repeat center;
+  background-color: $footer-bg-color;
 }
 
 .best-item__btn {
@@ -134,8 +134,6 @@
     height: 404px;
     margin-bottom: 0;
     background-color: $bg-color;
-    background: url("../img/triple-set-mobile@2x.jpg") no-repeat center;
-    border: 1px solid brown;
   }
 
   .best-item__best-product {
@@ -171,6 +169,7 @@
     left: -230px;
     font-size: 53px;
     line-height: 57px;
+    z-index: 10;
   }
 
   .best-item__description-wrapper {
@@ -184,14 +183,13 @@
   }
 
   .best-item__price-wrapper {
-    margin-top: 106px;
+    margin-top: 119px;
   }
 
   .best-item__img {
     width: 525px;
     height: 636px;
     top: 70px;
-    background: url("../img/triple-set-mobile@2x.jpg") no-repeat center;
   }
 
   .best-item__best-product {

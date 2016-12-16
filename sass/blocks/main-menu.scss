@@ -193,9 +193,7 @@
     width: 20px;
     height: 88px;
     margin: 0;
-    padding: 38px 45px 0 30px;
     margin-right: 0;
-    box-shadow: 0 0 0 1px $box-shadow;
   }
 
   .main-menu-item__search-text {
@@ -211,6 +209,12 @@
   .main-menu-item__title {
     height: 88px;
     padding-left: 0;
+  }
+
+
+  .main-menu-item__title--search {
+    padding: 0 30px 0 30px;
+    box-shadow: 0 0 0 1px $box-shadow;
   }
 
 
