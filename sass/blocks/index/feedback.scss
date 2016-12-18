@@ -1,3 +1,10 @@
+@keyframes slide {
+  0% {
+    opacity: 0;
+    display: static;
+  }
+}
+
 .feedback {
   display: block;
   padding: 0 30px 42px 30px;
@@ -9,13 +16,26 @@
   line-height: 30px;
 }
 
+.feedback__content-wrapper {
+
+  &--hidden {
+    display: none;
+  }
+
+  &--visible {
+    animation-name: slide;
+    animation-duration: 2s;
+  }
+}
+
 .feedback__content {
   display: block;
+  min-height: 120px;
   font-family: "OpenSansRegular";
   font-size: 15px;
   line-height: 30px;
   color: $gray;
-  margin: 35px 0 36px 0;
+  margin: 28px 0 30px 0;
 }
 
 .feedback__author {
@@ -27,10 +47,8 @@
 .feedback__nickname {
   font-size: 18px;
   margin-bottom: 35px;
-}
-
-.feedback__btn {
-  max-width: 175px;
+  color: $black;
+  text-decoration: none;
 }
 
 .feedback-nav {
@@ -51,6 +69,9 @@
 
 .feedback-nav__left,
 .feedback-nav__right {
+  cursor: pointer;
+  outline: none;
+
   &:hover {
     opacity: 0.6;
   }
@@ -60,16 +81,19 @@
   }
 }
 
+.feedback__btn {
+  font-size: 18px;
+  padding: 15px 0;
+}
 
 @media ($tablet-widths) {
   .feedback {
     position: relative;
-    height: 457px;
+    min-height: 457px;
     background-image: url("../img/review.jpg");
-//    background-size: 350px 457px;
-    background-size: contain;
-    background-position: left;
+    background-position: top left;
     background-repeat: no-repeat;
+    background-size: auto;
     margin: 0 50px 58px 0;
     padding: 79px 0 0 50px;
 
@@ -84,6 +108,10 @@
     line-height: 50px;
   }
 
+  .feedback__content-wrapper {
+    padding-bottom: 10px;
+  }
+
   .feedback__content {
     width: 660px;
     font-size: 17px;
@@ -92,7 +120,6 @@
 
   .feedback__nickname {
     font-size: 17px;
-    margin-bottom: 50px;
   }
 
   .feedback__btn {
@@ -107,7 +134,7 @@
   .feedback-nav {
     position: absolute;
     bottom: 20px;
-    right: 50px;
+    right: 0;
     width: 175px;
   }
 
@@ -139,12 +166,7 @@
     margin: 55px 0 55px 0;
   }
 
-  .feedback__nickname {
-    margin-bottom: 50px;
-  }
-
   .feedback-nav {
     bottom: 30px;
-    right: 0;
   }
 }

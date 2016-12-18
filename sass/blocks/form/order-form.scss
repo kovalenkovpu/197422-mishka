@@ -1,7 +1,7 @@
 .order-title {
   display: block;
   width: 320px;
-  padding: 22px 30px 26px 30px;
+  padding: 25px 30px 26px 30px;
   font-family: "OpenSansRegular";
   font-size: 13px;
   line-height: 24px;
@@ -56,6 +56,10 @@
 
   &--color {
     margin-bottom: 22px;
+  }
+
+  &--personal {
+    margin-bottom: 10px;
   }
 }
 

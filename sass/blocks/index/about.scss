@@ -18,13 +18,13 @@
 .about-item__title {
   font-family: "OpenSansBold";
   font-size: 17px;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .about-item__logo {
+  padding-top: 30px;
 
   &--flower {
-    padding-top: 20px;
 
     &:before {
       content: "";
@@ -36,7 +36,6 @@
   }
 
   &--money {
-    padding-top: 20px;
 
     &:before {
       content: "";
@@ -48,7 +47,6 @@
   }
 
   &--heart {
-    padding-top: 20px;
 
     &:before {
       content: "";
@@ -60,7 +58,6 @@
   }
 
   &--roll {
-    padding-top: 20px;
 
     &:before {
       content: "";
@@ -72,7 +69,6 @@
   }
 
   &--rocket {
-    padding-top: 20px;
 
     &:before {
       content: "";
@@ -84,7 +80,6 @@
   }
 
   &--gift {
-    padding-top: 20px;
 
     &:before {
       content: "";

@@ -28,7 +28,7 @@
         </a>
         <ul class="main-menu__list main-menu__list--visible">
           <!-- элементы меню бургера -->
-          <li class="main-menu-item"><a href="/catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
+          <li class="main-menu-item"><a href="catalogue.html" class="main-menu-item__title">Каталог товаров</a></li>
           <li class="main-menu-item"><a href="form.html" class="main-menu-item__title">Вязание на заказ</a></li>
           <li class="main-menu-item"><a href="/search.html" class="main-menu-item__title main-menu-item__title--search"><svg class="main-menu-item__search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve"><path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/></svg><span class="main-menu-item__search-text">Поиск по сайту</span></a></li>
 
@@ -111,9 +111,27 @@
       <!-- блок Отзывов -->
       <section class="feedback">
         <h3 class="feedback__title">Отзывы</h3>
-        <p class="feedback__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных   инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают   больше лайков!</p>
-        <p class="feedback__author">Анастасия Красильникова</p>
-        <a href="#" class="feedback__nickname">@misssssiskras</a>
+        <div class="feedback__content-wrapper">
+          <p class="feedback__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных   инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают   больше лайков!</p>
+          <p class="feedback__author">Анастасия Красильникова</p>
+          <a href="#" class="feedback__nickname">@misssssiskras</a>
+        </div>
+        <div class="feedback__content-wrapper feedback__content-wrapper--hidden">
+          <p class="feedback__content">Божественно!</p>
+          <p class="feedback__author">Павел Коваленков</p>
+          <a href="#" class="feedback__nickname">@kovalenkovpu</a>
+        </div>
+        <div class="feedback__content-wrapper feedback__content-wrapper--hidden">
+          <p class="feedback__content">A black hole is a region of spacetime exhibiting such strong gravitational effects that nothing—not even particles and electromagnetic radiation such as light—can escape from inside it.The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.</p>
+          <p class="feedback__author">Стивен</p>
+          <a href="#" class="feedback__nickname">@hawking1942</a>
+        </div>
+        <div class="feedback__content-wrapper feedback__content-wrapper--hidden">
+          <p class="feedback__content">A stellarator is a device used to confine hot plasma with magnetic fields in order to sustain a controlled nuclear fusion reaction. It is one of the earliest controlled fusion devices, first invented by Lyman Spitzer in 1958.</p>
+          <p class="feedback__author">Lyman Spitzer</p>
+          <a href="#" class="feedback__nickname">@spitzer</a>
+        </div>
+
         <!-- стрелочки ротатора отзывов, изображение бэкграундом -->
         <div class="feedback-nav">
           <button class="feedback-nav__left  arrow-btn" type="button"></button>
@@ -139,9 +157,7 @@
           </div>
         </dl>
         <!-- блок для карты -->
-        <div class="contacts__map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0_PvIpolR-ucwsD1MuaLYgVrLvKAO8sH&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-        </div>
+        <div class="contacts__map" id="map"></div>
         <!-- кнопка "Напишите нам" ниже карты -->
         <a href="#" class="contact-us ghost-btn">Напишите нам</a>
       </section>
@@ -228,7 +244,12 @@
   </section>
 
   <script src="js/main-menu.js"></script>
+  <script src="js/feedback-rotator.js"></script>
   <script src="js/modal-window-index.js"></script>
+
+  <!-- подключение Ymaps.api и js-модуля для кастомной геометки -->
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/icon_customImage.js"></script>
 
   </body>
 </html>

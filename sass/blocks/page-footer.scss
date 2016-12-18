@@ -40,6 +40,7 @@
 
   &:hover svg {
     fill: $dark-green;
+    transition-duration: $time;
   }
 
   &:active svg {
@@ -67,6 +68,7 @@
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
+    transition-duration: $time;
   }
 
   &:active {
@@ -76,6 +78,7 @@
 
 .developed__title:hover > .developed__logo {
   fill: $dark-green;
+  transition-duration: $time;
 }
 
 .developed__logo {
@@ -96,6 +99,7 @@
 
     &[href]:hover {
       fill: $dark-green;
+      transition-duration: $time;
     }
 
     &[href]:active {
