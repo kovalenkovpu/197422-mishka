@@ -57,6 +57,18 @@
     height: 17px;
     background-image: url("../img/wave-tablet.png");
   }
+
+  .wave-wide {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    width: 100%;
+    background-image: url("../img/wave1.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+  }
 }
 
 
@@ -64,5 +76,10 @@
   .wave-thick {
     height: 23px;
     background-image: url("../img/wave-desktop.png");
+  }
+
+  .wave-wide {
+    height: 34px;
+    background-image: url("../img/wave2.png");
   }
 }
