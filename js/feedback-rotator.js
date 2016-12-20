@@ -7,8 +7,11 @@ var leftArrow = feedback.getElementsByClassName("feedback-nav__left")[0];
 var i = 0,
     j = content.length,
     time = 4000;
+var timerId = setInterval(showNextSlide, time);
 
 function showNextSlide() {
+  clearInterval(timerId);
+
   if (i == (j - 1)) {
     content[i].classList.add("feedback__content-wrapper--hidden");
     i = 0;
@@ -23,6 +26,8 @@ function showNextSlide() {
 };
 
 function showPreviousSlide() {
+  clearInterval(timerId);
+
   if (i == 0) {
     content[i].classList.add("feedback__content-wrapper--hidden");
     i = (j - 1);
@@ -34,14 +39,6 @@ function showPreviousSlide() {
   };
 };
 
-var timerId = setInterval(showNextSlide, time);
+rightArrow.addEventListener("click", showNextSlide);
 
-rightArrow.addEventListener("click", function() {
-  clearInterval(timerId);
-  showNextSlide();
-});
-
-leftArrow.addEventListener("click", function() {
-  clearInterval(timerId);
-  showPreviousSlide();
-});
+leftArrow.addEventListener("click", showPreviousSlide);
