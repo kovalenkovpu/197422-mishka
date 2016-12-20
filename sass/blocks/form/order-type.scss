@@ -12,6 +12,7 @@
   position: relative;
   display: block;
   padding: 18px 10px 15px 65px;
+  margin-top: 10px;
   font-family: "OpenSansBold";
   font-size: 17px;
   line-height: 18px;
@@ -19,6 +20,7 @@
 
   &:hover .order-type__input-icon {
     color: $light-green;
+    transition-duration: $time;
   }
 
   &:active .order-type__input-icon {
@@ -68,6 +70,7 @@
     font-size: 19px;
     padding: 15px 10px 20px 80px;
     margin-bottom: 20px;
+    margin-top: 0;
   }
 
   .order-type__input-icon {

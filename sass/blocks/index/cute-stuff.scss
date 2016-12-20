@@ -24,16 +24,18 @@
 
   &:hover {
     background: $light-green-hover;
+    transition-duration: $time;
 
-    &::after {
+    &:after {
       opacity: 0.7;
+      transition-duration: $time;
     }
   }
 
   &:active {
     color: rgba(256, 256, 256, 0.3);
 
-    &::after {
+    &:after {
       opacity: 0.3;
     }
   }
@@ -44,30 +46,34 @@
 
   &:hover {
     background: $dark-green-hover;
+    transition-duration: $time;
 
-    &::after {
+    &:after {
       opacity: 0.7;
+      transition-duration: $time;
     }
   }
 
   &:active {
     color: rgba(256, 256, 256, 0.3);
 
-    &::after {
+    &:after {
       opacity: 0.3;
     }
   }
 }
+
 .interior-btn,
 .toys-btn {
 
-  &::after {
+  &:after {
     content: "";
     display: block;
     position: absolute;
     opacity: 0.5;
   }
 }
+
 .interior-btn:after {
   width: 41px;
   height: 62px;
@@ -75,6 +81,7 @@
   top: 23px;
   background: url("../img/icon-interior.svg") no-repeat;
 }
+
 .toys-btn:after {
   width: 60px;
   height: 60px;
@@ -133,18 +140,6 @@
   .toys-btn {
     float: right;
   }
-
-  .cute-stuff__wave {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 24px;
-    width: 100%;
-    background-image: url("../img/wave1.png");
-    background-repeat: repeat-x;
-    background-position: left bottom;
-  }
 }
 
 @media ($desktop-widths) {
@@ -172,10 +167,5 @@
 
   .toys-btn {
     float: right;
-  }
-
-  .cute-stuff__wave {
-    height: 34px;
-    background-image: url("../img/wave2.png");
   }
 }

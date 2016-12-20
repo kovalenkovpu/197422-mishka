@@ -17,6 +17,7 @@
 
   &:hover .order-color__input-icon {
     color: $light-green;
+    transition-duration: $time;
   }
 
   &:active .order-color__input-icon {

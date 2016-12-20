@@ -1,7 +1,7 @@
 .green-btn {
   display: block;
   position: relative;
-  padding: 26px 30px 30px 30px;
+  padding: 25px 30px 29px 30px;
   text-decoration: none;
   font-family: "OpenSansBold";
   font-size: 19px;
@@ -25,6 +25,7 @@
   &:hover {
     background-color: $gray;
     color: $bg-color;
+    transition-duration: $time;
   }
 
   &:active {
@@ -56,6 +57,18 @@
     height: 17px;
     background-image: url("../img/wave-tablet.png");
   }
+
+  .wave-wide {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    width: 100%;
+    background-image: url("../img/wave1.png");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+  }
 }
 
 
@@ -63,5 +76,10 @@
   .wave-thick {
     height: 23px;
     background-image: url("../img/wave-desktop.png");
+  }
+
+  .wave-wide {
+    height: 34px;
+    background-image: url("../img/wave2.png");
   }
 }

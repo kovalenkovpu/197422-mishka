@@ -38,6 +38,10 @@
     background: $gray;
     transition: $time;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .main-menu__toggle--crossed {
@@ -83,6 +87,7 @@
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
+    transition-duration: $time;
   }
 
   &:active {
@@ -96,6 +101,7 @@
 
 .main-menu-item__title:hover .main-menu-item__search {
   fill: $dark-green-hover;
+  transition-duration: $time;
 }
 
 .main-menu-item__title:active .main-menu-item__search {
@@ -104,6 +110,7 @@
 
 .main-menu-item__title:hover .main-menu-item__cart {
   fill: $dark-green-hover;
+  transition-duration: $time;
 }
 
 .main-menu-item__title:active .main-menu-item__cart {

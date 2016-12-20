@@ -23,17 +23,19 @@
 .page-footer {
   display: block;
   padding: 0 30px 0 30px;
-  margin: 45px 0 0 0;
+  margin: 40px 0 0 0;
   background-color: $footer-bg-color;
 }
 
 .order-wrapper {
   display: block;
+  margin-bottom: 55px;
 }
 
 .page-opacified {
   opacity: 0.1;
 }
+
 
 @media ($tablet-widths) {
 
@@ -50,9 +52,8 @@
   }
 
   .order-wrapper {
-    margin: 50px 0 50px 0;
+    margin: 30px 0 50px 0;
   }
-
 }
 
 
