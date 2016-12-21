@@ -25,6 +25,7 @@
     "symbols": "gulp symbols",
     "test": "editorconfig-cli",
     "serve": "gulp serve",
+    "localserve": "gulp localserve",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },

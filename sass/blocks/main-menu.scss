@@ -142,12 +142,18 @@
 //АНИМАЦИЯ ПОЯВЛЕНИЯ МЕНЮ//
 .main-menu__list {
   &--invisible {
+    display: flex;
     transform: translateY(-1000px);
     transition-duration: 1s;
   }
 
   &--visible {
+    display: flex;
     transition-duration: 1s;
+  }
+
+  &--js-active {
+    display: none;
   }
 }
 //************************

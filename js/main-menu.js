@@ -20,7 +20,15 @@ function hideMenu() {
   menu.style.height = "0";
 };
 
+menuList.classList.add("main-menu__list--js-active");
+menuList.classList.remove("main-menu__list--visible");
+toggle.classList.remove("main-menu__toggle--crossed");
+
 toggleWrapper.addEventListener('click', function(){
+  if (menuList.classList.contains("main-menu__list--js-active")) {
+    menuList.classList.remove("main-menu__list--js-active");
+  };
+
   if (menuList.classList.contains("main-menu__list--visible")) {
     hideMenu();
   } else {
