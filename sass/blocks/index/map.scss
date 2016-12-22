@@ -2,12 +2,14 @@
   height: 457px;
   margin: 0 -30px 40px -30px;
   padding: 0;
-//    Используется интерактивная карта Я, изображение не загружаю
-//  background: url("../img/map-mobile@1x.jpg") no-repeat center;
 
-  @media #{$retina} {
-//      background-image: url("../img/map-mobile@2x.jpg");
+  &--nojs {
+    background: url("../img/map-mobile@1x.jpg") no-repeat center;
+
+    @media #{$retina} {
+      background-image: url("../img/map-mobile@2x.jpg");
     }
+  }
 }
 
 
@@ -15,10 +17,13 @@
   .contacts__map {
     width: 100%;
     margin: 0 0 55px 0;
-//    background: url("../img/map-tablet@1x.jpg") no-repeat center;
 
-    @media #{$retina} {
-//      background-image: url("../img/map-mobile@2x.jpg");
+    &--nojs {
+      background: url("../img/map-tablet@1x.jpg") no-repeat center;
+
+      @media #{$retina} {
+        background-image: url("../img/map-tablet@2x.jpg");
+      }
     }
   }
 }
@@ -31,10 +36,13 @@
     right: 0;
     margin-bottom: 0;
     width: 525px;
-//    background: url("../img/map-desktop@1x.jpg") no-repeat center;
 
-    @media #{$retina} {
-//      background-image: url("../img/map-mobile@2x.jpg");
+    &--nojs {
+      background: url("../img/map-desktop@1x.jpg") no-repeat center;
+
+      @media #{$retina} {
+        background-image: url("../img/map-mobile@2x.jpg");
+      }
     }
   }
 }

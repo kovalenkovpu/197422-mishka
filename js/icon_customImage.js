@@ -1,3 +1,8 @@
+//если js загрузился корректно, то убираем класс
+var mapNojs = document.getElementsByClassName("contacts__map")[0];
+
+mapNojs.classList.remove("contacts__map--nojs");
+
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [59.936341, 30.321654],

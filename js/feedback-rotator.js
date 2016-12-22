@@ -10,7 +10,6 @@ var i = 0,
 var timerId = setInterval(showNextSlide, time);
 
 function showNextSlide() {
-  clearInterval(timerId);
 
   if (i == (j - 1)) {
     content[i].classList.add("feedback__content-wrapper--hidden");
@@ -39,6 +38,9 @@ function showPreviousSlide() {
   };
 };
 
-rightArrow.addEventListener("click", showNextSlide);
+rightArrow.addEventListener("click", function() {
+  clearInterval(timerId);
+  showNextSlide();
+});
 
 leftArrow.addEventListener("click", showPreviousSlide);
