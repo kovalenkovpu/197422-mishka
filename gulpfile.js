@@ -79,8 +79,7 @@ gulp.task("copy", function() {
     "fonts/**/*.{woff,woff2}",
     "img/**",
     "js/**",
-    "*.html",
-    "css/normalize.css" //не уверен, что его нужно копировать
+    "*.html"
   ], {
     base: "."
   })
