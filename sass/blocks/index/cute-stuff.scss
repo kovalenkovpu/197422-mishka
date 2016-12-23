@@ -12,11 +12,15 @@
 .cute-stuff__title {
   width: 245px;
   margin: 0 auto;
-  padding: 75px 0 116px 0;
-  font-family: "OpenSansBold";
+  padding: 75px 0 117px 0;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
+  font-weight: bold;
+}
+
+.cute-stuff__buttons {
+  @include container();
 }
 
 .interior-btn {
@@ -65,7 +69,7 @@
 
 .interior-btn,
 .toys-btn {
-
+  padding-right: 90px;
   &:after {
     content: "";
     display: block;
@@ -95,9 +99,8 @@
 
   .cute-stuff {
     position: relative;
-    height: 745px;
+    min-height: 745px;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-size: cover;
 
     @media #{$retina} {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -108,26 +111,26 @@
     width: 500px;
     margin: 0 auto;
     padding-top: 165px;
-    font-family: "OpenSansBold";
+    padding-bottom: 364px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .cute-stuff__buttons {
+    @include container();
     @include clearfix();
-    position: absolute;
-    bottom: 0;
     width: 668px;
-    margin: 0 50px;
+    padding: 0 50px;
   }
 
   .interior-btn,
   .toys-btn {
     width: 50%;
-    height: 120px;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    min-height: 120px;
+    padding: 28px 90px 25px 35px;
     float: left;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .interior-btn:after {
@@ -148,21 +151,22 @@
   .cute-stuff__title {
     width: 620px;
     margin: 0 auto;
-    padding-bottom: 100px;
-    font-family: "OpenSansBold";
+    padding-bottom: 355px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .cute-stuff__buttons {
     width: 1050px;
-    margin: 0 50px;
+    padding: 0;
   }
 
   .interior-btn,
   .toys-btn {
     width: 50%;
-    height: 120px;
+    padding-top: 30px;
+    padding-left: 40px;
+    min-height: 120px;
     float: left;
   }
 

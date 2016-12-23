@@ -1,5 +1,9 @@
+.order-form-submit {
+  @include container();
+  padding: 0 30px;
+}
+
 .order-form__note {
-  font-family: "OpenSansRegular";
   font-size: 14px;
   line-height: 16px;
 }
@@ -12,12 +16,15 @@
   background-color: $bg-color;
 }
 
+
 @media ($tablet-widths) {
   .order-form-submit {
+    @include container();
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 50px 0 50px;
+    padding: 0 50px;
+
   }
 
   .order-form__note {
@@ -36,7 +43,6 @@
 
 @media ($desktop-widths) {
   .order-form-submit {
-    margin-left: 225px;
-    margin-right: 225px;
+    padding: 0 225px;
   }
 }

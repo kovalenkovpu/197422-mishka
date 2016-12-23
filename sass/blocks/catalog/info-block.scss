@@ -1,7 +1,8 @@
 .info-block {
+  @include container();
   display: block;
   position: relative;
-  margin: 30px;
+  width: 260px;
   margin-bottom: 60px;
   box-shadow: inset 0 0 0 1px $box-shadow;
 
@@ -32,7 +33,7 @@
 
 .info-block__title {
   display: block;
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   max-width: 150px;
@@ -40,7 +41,6 @@
 
 .info-block__description {
   padding: 26px 34px 22px 34px;
-  font-family: "OpenSansRegular";
   font-size: 13px;
   line-height: 24px;
 }
@@ -92,7 +92,9 @@
   .info-block {
     display: flex;
     flex-direction: column;
-    margin: 52px 50px 63px 50px;
+    width: 668px;
+    margin-top: 52px;
+    margin-botoom: 63px;
   }
 
   .info-block__video-wrapper {
@@ -135,8 +137,10 @@
 @media ($desktop-widths) {
   .info-block {
     flex-wrap: wrap;
+    width: 1050px;
     position: relative;
-    margin: 8px 50px 105px 50px;
+    margin-top: 8px;
+    margin-bottom: 105px;
     padding-bottom: 0;
   }
 

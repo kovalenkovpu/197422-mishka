@@ -3,9 +3,9 @@
   position: relative;
   padding: 25px 30px 29px 30px;
   text-decoration: none;
-  font-family: "OpenSansBold";
   font-size: 19px;
   line-height: 24px;
+  font-weight: bold;
   color: $bg-color;
 }
 
@@ -13,7 +13,7 @@
   display: block;
   margin: 0 auto;
   padding: 18px 0;
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 17px;
   text-align: center;
   text-decoration: none;
@@ -46,28 +46,29 @@
   display: block;
   height: 7px;
   width: 100%;
-  background-image: url("../img/wave-mobile.png");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: left bottom;
+  background-size: contain;
 }
 
 
 @media ($tablet-widths) {
   .wave-thick {
     height: 17px;
-    background-image: url("../img/wave-tablet.png");
   }
 
   .wave-wide {
     display: block;
     position: absolute;
-    bottom: 0;
     left: 0;
     height: 24px;
     width: 100%;
-    background-image: url("../img/wave1.png");
+    bottom: -12px;
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: left bottom;
+    background-size: contain;
   }
 }
 
@@ -75,11 +76,10 @@
 @media ($desktop-widths) {
   .wave-thick {
     height: 23px;
-    background-image: url("../img/wave-desktop.png");
   }
 
   .wave-wide {
     height: 34px;
-    background-image: url("../img/wave2.png");
+    bottom: -17px;
   }
 }

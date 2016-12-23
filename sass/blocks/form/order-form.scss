@@ -1,21 +1,21 @@
 .order-title {
+  @include container();
   display: block;
   width: 320px;
   padding: 25px 30px 26px 30px;
   font-weight: normal;
-  font-family: "OpenSansRegular";
   font-size: 13px;
   line-height: 24px;
 }
 
-.order-form {
-  margin: 0 30px 30px 30px;
-}
-
 .order-form__group {
-  margin: 0 0 30px 0;
-  padding: 0;
+  @include container();
+  padding: 0 30px 0 30px;
   border: none;
+
+  &--type-order {
+    margin-bottom: 30px;
+  }
 
   &--phone-order,
   &--mail-order {
@@ -41,7 +41,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: $light-green;
@@ -67,13 +67,15 @@
 
 
 @media ($tablet-widths) {
+  .order-form__group-wrapper {
+    background-color: $footer-bg-color;
+  }
+
   .order-title {
-    width: auto;
-    margin: 0 50px 0 50px;
+    @include container();
     font-size: 17px;
     line-height: 30px;
-    padding-top: 30px;
-    padding-left: 0;
+    padding: 30px 100px 26px 50px;
   }
 
   .order-form {
@@ -84,32 +86,8 @@
   .order-form__group {
     display: flex;
     position: relative;
-    padding-left: 167px; //временно
     margin-bottom: 0;
-
-    &--type-order {
-      padding-left: 0;
-    }
-
-    &--color-order {
-      padding-left: 0;
-      background-color: $footer-bg-color;
-    }
-
-    &--personal-order {
-      padding-left: 0;
-    }
-    &--phone-order {
-      padding-left: 0;
-      background-color: $footer-bg-color;
-    }
-    &--mail-order {
-      padding-left: 0;
-      background-color: $footer-bg-color;
-    }
-    &--extra-order {
-      padding-left: 0;
-    }
+    padding: 0;
   }
 
   .order-form__intro {
@@ -151,10 +129,8 @@
 
 @media ($desktop-widths) {
   .order-title {
-    width: 710px;
-    margin-left: 225px;
-    margin-right: 0;
-    padding: 22px 30px 22px 0;
+    @include container();
+    padding: 22px 250px 22px 225px;
   }
 
   .order-form__intro {
