@@ -1,17 +1,19 @@
 .contacts {
+  @include container();
   display: block;
-  margin: 40px 30px 35px 30px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  padding: 0 30px;
 }
 
 .contacts__title {
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 30px;
 }
 
 .contacts__info {
-  font-family: "OpenSansRegular";
   font-size: 15px;
   line-height: 30px;
   color: $gray;
@@ -69,7 +71,9 @@
 @media ($tablet-widths) {
   .contacts {
     position: relative;
-    margin: 58px 0 60px 0;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    padding: 0;
 
     &:after {
       content: "";
@@ -123,11 +127,12 @@
 
 @media ($desktop-widths) {
   .contacts {
-    margin: 71px 50px 105px 50px;
-    padding-left: 175px;
+    margin-top: 71px;
+    margin-bottom: 105px;
+    padding-left: 225px;
 
     &:after {
-      left: 60px;
+      left: 110px;
       top: 60px;
     }
   }
@@ -136,15 +141,16 @@
     width: 320px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 58px;
+    margin-bottom: 54px;
     margin-left: 0;
     padding-top: 70px;
+    margin-left: -5px;
   }
 
   .contacts__info {
     width: 320px;
     font-size: 17px;
-    margin-bottom: 75px;
+    margin-bottom: 78px;
     margin-left: 0;
   }
 

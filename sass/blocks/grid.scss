@@ -1,12 +1,11 @@
 * {
-  font-family: "OpenSansRegular", "Calibri", sans-serif;
+  font-family: "OpenSans", "Calibri", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .page-wrapper {
-  @include container();
   display: block;
   position: relative;
   margin: 0 auto;
@@ -14,6 +13,7 @@
 }
 
 .page-header {
+  @include container();
   position: relative;
   display: flex;
   flex-direction: column;
@@ -21,9 +21,9 @@
 }
 
 .page-footer {
+  @include container();
   display: block;
   padding: 0 30px 0 30px;
-  margin: 40px 0 0 0;
   background-color: $footer-bg-color;
 }
 
@@ -43,6 +43,7 @@
     padding: 0 50px 0 50px;
     height: 88px;
     padding-top: 0;
+    box-shadow: none;
   }
 
   .page-footer {

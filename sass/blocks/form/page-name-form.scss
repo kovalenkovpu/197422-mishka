@@ -1,28 +1,25 @@
 .page-name {
-  min-width: 260px;
-  width: 320px;
+  background-color: $footer-bg-color;
 }
 
 .page-name__title {
+  @include container();
   display: block;
   padding: 67px 0 80px 0;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  background-color: $footer-bg-color;
 }
 
 
 @media ($tablet-widths) {
   .page-name {
     position: relative;
-    width: 100%;
   }
   .page-name__title {
-    width: 768px;
     padding: 98px 0 90px 0;
     font-size: 43px;
     line-height: 50px;
@@ -32,8 +29,7 @@
 
 @media ($desktop-widths) {
   .page-name__title {
-    width: 1150px;
-    padding: 102px 0 95px 0;
+    padding: 98px 0 99px 0;
     font-size: 53px;
     line-height: 57px;
   }

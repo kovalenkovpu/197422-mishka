@@ -1,11 +1,12 @@
 .about {
+  @include container();
   display: block;
   padding: 27px 30px 26px 30px;
 }
 
 .about__title {
   display: block;
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 }
@@ -16,7 +17,7 @@
 }
 
 .about-item__title {
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 17px;
   padding-top: 25px;
 }
@@ -94,7 +95,6 @@
 
 @media ($tablet-widths) {
   .about {
-    width: 100%;
     padding: 42px 50px 45px 50px;
   }
 
@@ -146,9 +146,7 @@
 
 @media ($desktop-widths) {
   .about {
-    width: auto;
-    margin-left: 50px;
-    padding: 64px 50px 50px 175px;
+    padding: 64px 50px 50px 225px;
   }
 
   .about__title {
@@ -159,5 +157,9 @@
 
   .about-item__logo {
     margin-right: 60px;
+  }
+
+  .about-item__title {
+    padding-top: 22px;
   }
 }

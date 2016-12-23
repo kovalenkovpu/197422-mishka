@@ -1,10 +1,11 @@
 .best-item {
+  @include container();
   position: relative;
   padding: 30px;
 }
 
 .best-item__title {
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 }
@@ -12,7 +13,7 @@
 .best-item__best-product {
   display: block;
   margin: 7px 0 25px 0;
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: $light-green;
@@ -20,7 +21,6 @@
 }
 
 .best-item__description {
-  font-family: "OpenSansRegular";
   font-size: 15px;
   color: $gray;
   line-height: 24px;
@@ -29,7 +29,6 @@
 
 .best-item__details {
   margin-bottom: 28px;
-  font-family: "OpenSansRegular";
   font-size: 15px;
   line-height: 24px;
 }
@@ -73,7 +72,7 @@
 
 .best-item__price {
   text-align: center;
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 17px;
   color: $gray;
   line-height: 24px;
@@ -155,9 +154,9 @@
 
   .best-item {
     position: relative;
-    margin-left: 175px;
     padding-top: 55px;
     padding-bottom: 72px;
+    padding-left: 225px;
   }
 
   .best-item__title-wrapper {
@@ -196,7 +195,7 @@
 
   .best-item__best-product {
     top: 80px;
-    left: -380px;
+    left: -360px;
     width: 70px;
     margin: 0;
     font-size: 17px;

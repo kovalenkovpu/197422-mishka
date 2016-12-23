@@ -6,12 +6,13 @@
 }
 
 .feedback {
+  @include container();
   display: block;
   padding: 0 30px 42px 30px;
 }
 
 .feedback__title {
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 }
@@ -31,7 +32,6 @@
 .feedback__content {
   display: block;
   min-height: 120px;
-  font-family: "OpenSansRegular";
   font-size: 15px;
   line-height: 30px;
   color: $gray;
@@ -39,7 +39,7 @@
 }
 
 .feedback__author {
-  font-family: "OpenSansBold";
+  font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -95,8 +95,8 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: auto;
-    margin: 0 50px 58px 0;
-    padding: 79px 0 0 50px;
+    padding: 79px 50px 0 50px;
+    margin-bottom: 58px;
 
     @media #{$retina} {
       background-image: url("../img/review@1x.jpg");
@@ -127,7 +127,7 @@
     position: absolute;
     width: 175px;
     top: 79px;
-    right: 0;
+    right: 50px;
     line-height: 16px;
     padding: 17px 0;
   }
@@ -135,7 +135,7 @@
   .feedback-nav {
     position: absolute;
     bottom: 20px;
-    right: 0;
+    right: 50px;
     width: 175px;
   }
 
@@ -147,9 +147,9 @@
 
 @media ($desktop-widths) {
   .feedback {
+    width: 1050px;
     padding-left: 175px;
     padding-top: 76px;
-    margin-left: 50px;
     margin-bottom: 66px;
 
     @media #{$retina} {
@@ -163,11 +163,17 @@
   }
 
   .feedback__content {
+    min-height: 0;
     width: 770px;
-    margin: 55px 0 55px 0;
+    margin: 55px 0 48px 0;
+  }
+
+  .feedback__btn {
+    right: 0;
   }
 
   .feedback-nav {
+    right: 0;
     bottom: 30px;
   }
 }
